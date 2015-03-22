@@ -1,0 +1,96 @@
+<!-- ephtracy content page --->
+
+<h3><strong>VOX Format</strong></h3>
+<p>
+The .vox format used in this editor is similar to RIFF format.
+</p>
+
+<p>
+The data in the file is organized in a hierarchical chunk structure. The header of the file contains :
+</p>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+      4 bytes : magic number ( 'V' 'O' 'X' 'space' ) </br>
+      4 bytes : version number ( current version is 150 )</br>
+      { MAIN chunk }</br>
+        </br>
+      ( all the magic number used here is big endian, for example, 'M''A''I''N', M is at 0 bytes, N is at 3 bytes )</br>
+  </div>
+</div>
+
+<p>
+The format for each chunk is as following :
+</p>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+// chunk                                            </br>
+{                                                   </br>
+&nbsp;&nbsp;&nbsp;&nbsp;// header                                       </br>
+&nbsp;&nbsp;&nbsp;&nbsp;4 bytes : chunk id                              </br>
+&nbsp;&nbsp;&nbsp;&nbsp;4 bytes : size of chunk contents ( n )          </br>
+&nbsp;&nbsp;&nbsp;&nbsp;4 bytes : total size of children chunks ( m )   </br>
+                                                    </br>
+&nbsp;&nbsp;&nbsp;&nbsp;// chunk content                                </br>
+&nbsp;&nbsp;&nbsp;&nbsp;n bytes : chunk contents                        </br>
+                                                    </br>
+&nbsp;&nbsp;&nbsp;&nbsp;// children chunks : m bytes                    </br>
+&nbsp;&nbsp;&nbsp;&nbsp;{ child chunk 0 }                               </br>
+&nbsp;&nbsp;&nbsp;&nbsp;{ child chunk 1 }                               </br>
+&nbsp;&nbsp;&nbsp;&nbsp;...                                             </br>
+}                                                   </br>
+( so the total chunk size is 4 + 4 + 4 + n + m )
+  </div>
+</div>
+
+<p>
+there are several children chunks within the root MAIN chunk :
+</p>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+MAIN chunk :                                                        </br>                                         
+&nbsp;&nbsp;&nbsp;&nbsp;id : ( 'M' 'A' 'I' 'N' )                                        </br>
+-------------------------------------------------                   </br>
+SIZE chunk :                                                        </br>
+&nbsp;&nbsp;&nbsp;&nbsp;id : ( 'S' 'I' 'Z' 'E' )                                        </br>
+&nbsp;&nbsp;&nbsp;&nbsp;content : ( 4 bytes x 3 : x, y, z )                             </br>
+                                                                    </br>
+VOXEL chunk :                                                       </br>
+&nbsp;&nbsp;&nbsp;&nbsp;id : ( 'X' 'Y' 'Z' 'I' )                                        </br>
+&nbsp;&nbsp;&nbsp;&nbsp;content :                                                       </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( numVoxels  : 4 bytes )                                    </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( each voxel : 1 byte x 4 : x, y, z, colorIndex ) x numVoxels</br>
+                                                                        </br>
+                                                                        </br>
+// NOTICE :                                                             </br>
+// 1. if Palette chunk does not exist, use default palette instead.     </br>
+// 2. last color is not used ( only the first 255 colors are used ).    </br>
+// 3. the first color ( at position 0 ) is corresponding to color index 1.</br>
+PALETTE chunk (optional) :                                                </br>
+&nbsp;&nbsp;&nbsp;&nbsp;id : ( 'R' 'G' 'B' 'A' )                                                </br>
+&nbsp;&nbsp;&nbsp;&nbsp;content :                                                               </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( each pixel : 1 byte x 4 : r, g, b, a ) x 256                      </br>
+  </div>
+</div>
+
+<p>
+For the color information, you can firstly export the palette as .act file, and then read color from it :   </br>
+- notice that the first valid color index of voxel is 1 ( since 0 is reserved for empty voxels )            </br>
+- while the first valid color in .act file is at position 0 ( so the last color is not used )               </br>
+</p>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+.act :( each pixel : 1 byte x 3 : r, g, b ) x 256                                                           </br>
+  </div>
+</div>
+
+
+<p>
+    <strong>NOTICE:</strong> </br>
+
+There are also some deprecated chunk types from old version models. </br>
+Just skip them by content size and children size. </br>
+</p>

@@ -2,47 +2,83 @@
 <html>
     
     <head>
-    <meta charset="utf-8">
-    <title>MagicaVoxel</title>
-    <meta name="description" content="MagicaVoxel Official Website">
-    <meta name="keywords" content="MagicaVoxel, Voxel, Voxel Editor">
-    <meta name="author" content="ephtracy">
+        <meta charset="utf-8">
+        <title>MagicaVoxel</title>
+        <meta name="description" content="MagicaVoxel Official Website">
+        <meta name="keywords" content="MagicaVoxel, Voxel, Voxel Editor">
+        <meta name="author" content="ephtracy">
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/mv.css" rel="stylesheet">
+        <script src="js/vertical-scroll.js"></script>
         
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function() {
+                $('.mv_load_content').click(function() {
+                    var c = $(this);
+                    var content_src = c.attr('mv_content_ref');
+
+                    $('#mv_content').load(content_src);
+                    
+                    $('li').removeClass('active')
+                    c.parent().addClass('active')
+                });
+                
+                $('li.active a').trigger('click')
+                
+            });
+        </script>
+    </head>
 
 <body>
     
     <div class="navbar navbar-default navbar-inverse navbar-fixed-top">
-       <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
+       <div class="container">
+           <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-                </button>
+                    </button>
 
-            <a class="navbar-brand" href="#">
-                MagicaVoxel
-            </a>
-        </div>
+                <a class="navbar-brand" href="#">
+                    E
+                </a>
+            </div>
+            
 
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-            </ul>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="mv_load_content" mv_content_ref="mv_main.html">MagicaVoxel</a></li>
+                    <li><a href="#" class="mv_load_content" mv_content_ref="mv_controls.html">Controls</a></li>
+                    <li><a href="#" class="mv_load_content" mv_content_ref="mv_commands.html">Commands</a></li>
+                    <li><a href="#" class="mv_load_content" mv_content_ref="mv_vox_format.html">VOX Format</a></li>
+<!--                    <li><a href="#" class="mv_load_content" mv_content_ref="mv_renderer.html">Renderer</a></li>-->
+                    <li><a href="#" class="mv_load_content" mv_content_ref="mv_contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <div class="jumbotron">
-        <div class="container">
-            <h3><strong>MagicaVoxel @ ephtracy</strong></h3>
-            <ul><li>a free lightweight 8-bit voxel editor and path tracing renderer, enjoy:)</li></ul>
-            <p><img src="./image/snap_home.png"></p>
-            <p><a class="btn btn-primary btn-lg" href="https://www.dropbox.com/sh/fnp7cn69yzrlcgh/AAA1AKNGjSYO5rfXW-wOklIWa?dl=0" role="button">Download</a></p>
+    <div id="wrap">
+        <div>
+            <div class="jumbotron">
+                <div class="container"  id="mv_content">
+                    
+                </div>
+            </div>
         </div>
         
     </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="pull-right">Copyright &copy; ephtracy 2013-2015</p>
+        </div>
+    </div>
 </body>
+    
 </html>
