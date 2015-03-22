@@ -13,11 +13,11 @@
 html, body {
     background-color: #eee;
     height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
 }
 
 .navbar-nav li {
-  font-size: 20px;
-  text-transform:uppercase;
+    
 }
 
 .footer {
@@ -39,4 +39,12 @@ html, body {
     height: auto;
     margin: 0 auto -60px;
     padding: 0 0 60px;
+}
+
+.off4s {
+    margin-left: 16px;
+}
+
+.jumbotron p {
+ font-size: 16px !important;   
 }

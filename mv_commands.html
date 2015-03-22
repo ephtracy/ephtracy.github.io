@@ -1,0 +1,181 @@
+<!-- ephtracy content page --->
+
+<h3><strong>Commands</strong></h3>
+
+<img src="image/commands.png" style="margin-bottom: 10px"></img>
+
+<p>
+    Press <strong>TAB</strong> to Enable/Enter Commands          <br/>
+    Press <strong>Enter</strong> to Enter Commands               <br/>
+    Press <strong>UP/DOWN</strong> to Select History Input       <br/>
+</p>
+
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th><b>Command Format</b> </th>
+        <th><b>Description</b> </th>
+        <th><b>Example</b> </th>
+    </tr>
+    <tr>
+        <td><b>undo</b> </td>
+        <td>undo cmd </td>
+    <td></td>
+    </tr>
+    <tr>
+        <td><b>redo</b> </td>
+        <td>redo cmd </td>
+    <td></td>
+    </tr>
+    <tr>
+        <td><b>load &lt;name&gt;</b> </td>
+        <td>load model from '/vox' </td>
+        <td>load room </td>
+    </tr>
+    <tr>
+        <td><b>save &lt;name&gt;</b> </td>
+        <td>save model to '/vox' </td>
+        <td>save room </td>
+    </tr>
+    <tr>
+        <td><b>del &lt;name&gt;</b> </td>
+        <td>del model in '/vox' </td>
+        <td>del room </td>
+    </tr>
+    <tr>
+        <td><b>name &lt;name&gt;</b> </td>
+        <td>rename model </td>
+        <td>name room </td>
+    </tr>
+    <tr>
+        <td><b>new</b></td>
+        <td>new model </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>dup</b> </td>
+        <td>duplicate model </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>zero</b> </td>
+        <td>empty model </td>
+    <td></td>
+    </tr>
+    <tr>
+        <td><b>full</b> </td>
+        <td>full bounding box </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>fill</b> </td>
+        <td>fill whole model with same color </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>size &lt;x y z&gt;</b> </td>
+        <td>resize model from center </td>
+        <td>size 45 50 10 </td>
+    </tr>
+    <tr>
+        <td><b>scale2x</b> </td>
+        <td>scale model 2X </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>compact</b> </td>
+        <td>shrink bounding box </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>loop &lt;axis distance...&gt;</b> </td>
+        <td>loop model </td>
+        <td>loop xy 2 z -4 </td>
+    </tr>
+    <tr>
+        <td><b>flip &lt;axis ...&gt;</b> </td>
+        <td>flip model </td>
+        <td>flip yz </td>
+    </tr>
+    <tr>
+        <td><b>rot90 &lt;axis&gt;</b> </td>
+        <td>rotate model 90 degrees </td>
+        <td>rot z </td>
+    </tr>
+    <tr>
+        <td><b>scale &lt;axis scale&gt;</b> </td>
+        <td>scale model </td>
+        <td>scale xy 4 z 2 </td>
+    </tr>
+    <tr>
+        <td><b>repeat &lt;axis scale&gt;</b> </td>
+        <td>repeat model </td>
+        <td>repeat xyz 2 </td>
+    </tr>
+    <tr>
+        <td><b>rot &lt;axis degree&gt;</b> </td>
+        <td>rotate model </td>
+        <td>rot x 45 </td>
+    </tr>
+    <tr>
+        <td><b>mirror &lt;axis 1/0 ...&gt;</b> </td>
+        <td>change mirror state </td>
+        <td>mirror xy 1 z 0 </td>
+    </tr>
+    <tr>
+        <td><b>loft &lt;axis 1/0...&gt;</b> </td>
+        <td>change loft state </td>
+        <td>loft xy 0 z 1 </td>
+    </tr>
+    <tr>
+        <td><b>index &lt;colorIndex&gt;</b> </td>
+        <td>select color index (1-255) </td>
+        <td>index 73 </td>
+    </tr>
+    <tr>
+        <td><b>rgb &lt;r g b&gt;</b> </td>
+        <td>change current color (0-255) </td>
+        <td>rgb 255 78 100 </td>
+    </tr>
+    <tr>
+        <td><b>hex &lt;ffffff&gt;</b></td>
+        <td>change current RGB color by hex code </td>
+        <td>hex f47835 </td>
+    </tr>
+    <tr>
+        <td><b>rand &lt;minIndex maxIndex&gt;</b> </td>
+        <td>paint model with random color </td>
+        <td>rand 10 15 </td>
+    </tr>
+    <tr>
+        <td><b>flood &lt;colorIndex&gt;</b></td>
+        <td>if colorIndex == 0, remove all invisible voxels </td>
+        <td>flood 0</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>otherwise, fill all invisible space with colorIndex </td>
+        <td>flood 73 </td>
+    </tr>
+    <tr>
+        <td><b>noise &lt;seed scale min max&gt;</b> </td>
+        <td>default value : scale = 0.03 min = 0.2 max = 0.5 </td>
+        <td>noise 123 0.03 0.2 0.5 </td>
+    </tr>
+    <tr>
+        <td><b>bw</b> </td>
+        <td>generate grey palette </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><b>o</b> </td>
+        <td>export model to Export/ </td>
+        <td>o obj </td>
+    </tr>
+    <tr>
+        <td><b>c</b> </td>
+        <td>execute custom command </td>
+        <td>c bw </td>
+    </tr>
+    </tbody>
+</table>
