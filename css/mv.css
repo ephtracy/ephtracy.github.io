@@ -1,0 +1,42 @@
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-control {
+    background-image: none !important;
+}
+
+#mv-carousel {
+    margin-bottom: 20px;
+}
+
+html, body {
+    background-color: #eee;
+    height: 100%;
+}
+
+.navbar-nav li {
+  font-size: 20px;
+  text-transform:uppercase;
+}
+
+.footer {
+	background:#333;
+}
+
+.footer p {
+	margin:20px 0;
+    margin-right: 60px;
+}
+
+.footer p {
+	color:#9d9d9d;
+	text-decoration:none;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
