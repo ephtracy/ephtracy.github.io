@@ -8,6 +8,7 @@
 
 #mv-carousel {
     margin-bottom: 20px;
+    max-height: 700px;
 }
 
 html, body {
