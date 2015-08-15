@@ -1,5 +1,6 @@
 .carousel-inner > .item > img {
     margin: 0 auto;
+    height: 500px;
 }
 
 .carousel-control {
@@ -8,7 +9,6 @@
 
 #mv-carousel {
     margin-bottom: 20px;
-    height: 500px;
 }
 
 html, body {
