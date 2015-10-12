@@ -26,8 +26,19 @@
                     c.parent().addClass('active')
                 });
                 
-                $('li.active a').trigger('click')
-                
+                function qs(key) {
+                    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); 
+                    var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+                    return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+                }
+
+                var page = qs('page'); 
+                if (page != undefined && page.length > 0) {
+                    $('#' + page).click()
+                }
+                else {
+                    $('li.active a').trigger('click')
+                }
             });
         </script>
     </head>
@@ -52,14 +63,14 @@
 
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#mv_main" id="mv_main" class="mv_load_content" mv_content_ref="mv_main.html">MagicaVoxel</a></li>
-                    <li><a href="#mv_renderer" id="mv_renderer" class="mv_load_content" mv_content_ref="mv_renderer.html">Viewer</a></li>
-                    <li><a href="#mv_controls" id="mv_controls" class="mv_load_content" mv_content_ref="mv_controls.html">Shortcuts</a></li>
-                    <li><a href="#mv_commands" id="mv_commands" class="mv_load_content" mv_content_ref="mv_commands.html">Commands</a></li>
-                    <li><a href="#mv_vox_format" id="mv_vox_format" class="mv_load_content" mv_content_ref="mv_vox_format.html">VOX Format</a></li>
+                    <li class="active"><a href="index.html?page=mv_main" id="mv_main" class="mv_load_content" mv_content_ref="mv_main.html">MagicaVoxel</a></li>
+                    <li><a href="index.html?page=mv_renderer" id="mv_renderer" class="mv_load_content" mv_content_ref="mv_renderer.html">Viewer</a></li>
+                    <li><a href="index.html?page=mv_controls" id="mv_controls" class="mv_load_content" mv_content_ref="mv_controls.html">Shortcuts</a></li>
+                    <li><a href="index.html?page=mv_commands" id="mv_commands" class="mv_load_content" mv_content_ref="mv_commands.html">Commands</a></li>
+                    <li><a href="index.html?page=mv_vox_format" id="mv_vox_format" class="mv_load_content" mv_content_ref="mv_vox_format.html">VOX Format</a></li>
 <!--                    <li><a href="#" class="mv_load_content" mv_content_ref="mv_renderer.html">Renderer</a></li>-->
-                    <li><a href="#mv_contact" id="mv_contact" class="mv_load_content" mv_content_ref="mv_contact.html">Contact</a></li>
-                    <li><a href="#mv_file_stash" id="mv_file_stash" class="mv_load_content" mv_content_ref="http://23.98.147.40/api/mv_files_nice">Files</a></li>
+                    <li><a href="index.html?page=mv_contact" id="mv_contact" class="mv_load_content" mv_content_ref="mv_contact.html">Contact</a></li>
+                    <li><a href="index.html?page=mv_file_stash" id="mv_file_stash" class="mv_load_content" mv_content_ref="http://23.98.147.40/api/mv_files_nice">Files</a></li>
 
                 </ul>
             </div>
