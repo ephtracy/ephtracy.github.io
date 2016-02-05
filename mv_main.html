@@ -87,7 +87,7 @@
 <br>
 <div>
     <li><strong>FAQ</strong></li>
-    <li> MacOS : if you get "App can't be opened" message, try this in terminal:
+    <li> if you get "App can't be opened" message on MacOS, try this in terminal:
         <ul>
             <li><strong>chmod +x [directory]/MagicaVoxel_mac.app/Contents/MacOS/MagicaVoxel</strong></li>
         </ul>
@@ -104,18 +104,28 @@
     <li> <strong>Updates 0.97.1 [?/?/?] </strong> </li>
     <li> 1. New Voxel Shader :
         <ul>
-            <li> support GLSL based shader script to generate your custom volume</li>
+            <li> support GLSL based shader script to generate your custom volume </li>
             <li> shaders are in the new folder shader/ </li>
             <li> try typing [xs wave] in console to start </li>
             <li> basic command format is : xs [shader name] [arg0] [arg1] [..] </li>
             <li> if you want to run the shader multiple times in one run, use : xs [num] [shader name ] [args...] </li>
         </ul>
-    <li> 2. New Marching Cube Export [Export->mc] : export your voxel model as Marching Cube meshes (.ply) </li>
-    <li> 3. Camera Control : use middle button to move camera </li>
-    <li> 4. Cache Folder [cache/] : program will automatically backup model before quitting program or rendering model</li>
-    <li> 5. Obj Export Pivot : fixed bugs for obj pivot, you can also set your custom pivot in config.txt->file_obj </li>
-    <li> 6. Hotkey : add Hotkeys 1-9 to set [V]oxel mode brush size quickly; Screenshot hotkey is changed to [F12/CTRL+F12]</li>
-    <li> 7. Palette Command : add command [pal mask] to mask out unused color in palette</li>
+    </li>
+    <li> 2. New Brush Option :
+        <ul>
+            <li> a) [V]oxel Mode : 3D(Volume:Cube, Sphere), 2D(Flat:Square, Disc), Su(Surface, only operates on surface) </li>
+            <br> add hotkeys 1-9 to set brush size quickly
+            <li> b) [C]enter Mode : suport both square and circle shape now </li>
+            <li> c) [P]attern Mode : can choose using either original model color or current palette color; </li>
+            <br> can be applied on erasing and painting now
+        </ul>
+    </li>
+    <li> 3. New Marching Cube Export [Export->mc] : export your voxel model as Marching Cube meshes (.ply) </li>
+    <li> 4. Camera Control : use middle button to move camera </li>
+    <li> 5. Cache Folder [cache/] : program will automatically backup model before quitting program or rendering model </li>
+    <li> 6. Obj Export Pivot : fixed bugs for obj pivot, you can also set your custom pivot in config.txt->file_obj </li>
+    <li> 7. Screenshot hotkey is changed to [F12/CTRL+F12] </li>
+    <li> 8. Palette Command : add command [pal mask] to mask out unused color in palette </li>
 </div>
 
 <br>
