@@ -109,14 +109,14 @@
             <li> Emit->Power : Radiant Flux for Area Lighting </li>
             <li> Emit->Glow : Energy loss on closer surface </li>
             <li> Emit->Total : Total power for all voxels or power density </li>
+            <li> requires "GI" option enabled for advanced effects </li>
+            <li> only supports Cubic/RG/RE voxel shape </li>
+            <li> for small but strong light source (like point lights), use Emit->Total </li>
+            <li> recommended using lower image resolution (e.g. 640x480) when adjusting parameters </li>
+            <li> for better quality of final image, recommended using more samples (e.g. 5000) </li>
+            <li> not robust for this version (has several potential artifacts) </li>
+            <li> if it is still too dark, do not forget to use Post->E to increase exposure</li>
         </ul>
-        <li> requires "GI" option enabled for advanced effects </li>
-        <li> only supports Cubic/RG/RE voxel shape </li>
-        <li> when want strong small light source, use Emit->Total </li>
-        <li> recommended using lower image resolution (e.g. 640x480) when adjusting parameters </li>
-        <li> for betterquality of final image, recommended using 5000 samples </li>
-        <li> not robust for this version (has several potential artifacts) </li>
-        <li> if it is still too dark, do not forget using Post->E to increase exposure</li>
     </li>
     <li> 2. Fix several artifacts for "Glass" material</li>
 </div>
