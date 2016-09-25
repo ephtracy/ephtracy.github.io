@@ -4,7 +4,7 @@
 <p>
     <li>a free lightweight 8-bit voxel editor and interactive path tracing renderer, enjoy:)</li>
     <li>standalone voxel renderer can be found here (2048^3 volume and minecraft scene) : <a href="http://ephtracy.github.io/index.html?page=mv_renderer"><strong>MagicaVoxel Viewer</strong></a> </li>
-    <li><a href="https://youtu.be/PPu7SJ1_bwc"><strong>Tutorial Video</strong></a> </li>
+    <li><a href="http://ephtracy.github.io/index.html?page=mv_resource"><strong>Tutorial Video and more resources</strong></a> </li>
     <li>feel free to use it for any project, no commercial licences required</li> 
 </p>
 
@@ -96,34 +96,35 @@
 <br>
 <div>
     <li><strong>FAQ</strong></li>
+    <li> if you get black screen on MacOS, try this:
+        <ul>
+            <li>extract the whole folder</li>
+            <li>move "MagicaVoxel-mac.app" outside the folder</li>
+            <li>move "MagicaVoxel-mac.app" back to the folder again</li>
+        </ul>
+    </li>
     <li> if you get "App can't be opened" message on MacOS, try this in terminal:
         <ul>
             <li><strong>chmod +x [directory]/MagicaVoxel-mac.app/Contents/MacOS/MagicaVoxel</strong></li>
         </ul>
     </li>
-    <li> if you get black screen :
-        <ul>
-            <li>extract all files and folders from the zip package, not just the app program</li>
-        </ul>
-    </li>
-    <li> Nvidia (650M+) and ATI (5000HD+) are recommended, Intel GPU may have issues</li>
 </div>
 
 <br>
 <div>
-    <li> <strong>Updates 0.97.5 [09/13/2016] </strong> </li>
-    <li> 1. Fog Scattering : can scatter all types of lights (Sun/SKy/Area)
+    <li> <strong>Updates 0.97.5 [09/25/2016] </strong> </li>
+    <li> 1. Fog Scattering : can scatter all types of lights (Sun/Sky/Area)
         <ul>
             <li> only works in Pers/Free camera modes </li>
             <li> works for glass/metal materials (can get reflection/refraction from sun light) </li>
             <li> surface can also be lit by scattered light </li>
-            <li> change occluder voxels to create light shafts </li>
-            <li> can create a background with samll density value </li>
+            <li> can create light shafts </li>
+            <li> can create background with small fog density </li>
             <li> fog color mainly depends on light color and in-scattering color </li>
         </ul>
     </li>    
-    <li> 2. ground is changed to infinity large in all camera mode </li>
-    <li> 3. optimized shaders to remove unused braches </li>
+    <li> 2. ground is changed to infinity large in all camera modes </li>
+    <li> 3. optimized shaders by removing unused branches </li>
 </div>
 
 <br>
