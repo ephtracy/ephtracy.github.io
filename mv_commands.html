@@ -18,6 +18,21 @@
         <th><b>Example</b> </th>
     </tr>
     <tr>
+        <th><b>scale xyz factor</b> </th>
+        <th><b>scale model</b> </th>
+        <th><b>scale x 0.5 yz 2.8</b> </th>
+    </tr>
+    <tr>
+        <th><b>rotate xyz degree</b> </th>
+        <th><b>rotate model</b> </th>
+        <th><b>rotate x 30</b> </th>
+    </tr>
+    <tr>
+        <th><b>repeat xyz num</b> </th>
+        <th><b>repeat model, negative value for mirror repeat</b> </th>
+        <th><b>repeat xy 4 z -0.5</b> </th>
+    </tr>
+    <tr>
         <td><b>rand [min max]</b> </td>
         <td>paint model with random color index between min and max </td>
         <td>rand 10 15 </td>
@@ -53,17 +68,17 @@
         <td>pal bw</td>
     </tr>
     <tr>
-        <td><b>dil [axis]</b></b> </td>
+        <td><b>dil [axis]</b></td>
         <td>dilation</td>
         <td>dil +z (only positive direction), dil xyz (both positive and negative direction)</td>
     </tr>
     <tr>
-        <td><b>ero [axis]</b></b> </td>
+        <td><b>ero [axis]</b></td>
         <td>erosion</td>
         <td>ero +z-yx (positive z, negative y, both direction x)</td>
     </tr>
     <tr>
-        <td><b>maze [edge length]</b></b> </td>
+        <td><b>maze [edge length]</b></td>
         <td>generate maze shape</td>
         <td>maze 8</td>
     </tr>
@@ -83,9 +98,9 @@
         <td>xs poly 5 </td>
     </tr>
     <tr>
-        <td><b>xs [numIterations] [shader name] [arg0] [arg1] ... </b> </td>
-        <td>execute custom voxel shader [shader/] several iterations</td>
-        <td>xs 10 dil </td>
+        <td><b>xs [option] [shader name] [arg0] [arg1] ... </b> </td>
+        <td>execute custom voxel shader [shader/]</td>
+        <td>xs wave </td>
     </tr>
     </tbody>
 </table>
