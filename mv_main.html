@@ -126,20 +126,22 @@
         <ul>
             <li> materials are saved into vox file now </li>
             <li> if there is unsaved changes, the tiny button besides name field will become orange, click it to save </li>
-            <li> program will ask for saving changes when change models or close program </li>
-            <li> click the title of each column to toggle its panel </li>
-            <li> drag and drop multiple models to import old vox models as animation </li>
-            <li> Tool->Scale, Repeat, Rotate is removed, instead, use console commands to use them </li>
+            <li> program will ask for saving changes when open new models or close program </li>
+            <li> click the title of each panel to close it </li>
+            <li> drag and drop multiple models to import vox models as animation </li>
+            <li> Tool->Scale, Repeat, Rotate is removed, instead, use console commands "scale, repeat, rot" </li>
         </ul>
     </li>    
-    <li> 3. Voxel shader also support generating anim
+    <li> 3. Voxel shader also support generating anim now
         <ul>
+            <li> New inputs : </li>
             <li> iFrame : current frame index </li>
             <li> iNumFrames : total num of frames </li>
             <li> iIter : current iteration index </li>
             <li> iRand : a vec4 random number updated every iter and frame </li>
-            <li> use option -n to specify number of iterations, eg. xs -n 8 [shaderName]<li>
-            <li> use option -prev or -cur to specify the input model : -prev use previous frame, -cur use current frame (default is -prev) </li>
+            <li> New Options : </li>
+            <li> -n to specify number of iterations, eg. xs -n 8 [shaderName]<li>
+            <li> -n to specify number of iterations, eg. xs -n 8 [shaderName]<li>
         </ul>
     </li>
 </div>
