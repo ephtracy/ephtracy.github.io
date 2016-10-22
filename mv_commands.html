@@ -19,23 +19,18 @@
     </tr>
     <tr>
         <th><b>scale xyz factor</b> </th>
-        <th><b>scale model</b> </th>
-        <th><b>scale x 0.5 yz 2.8</b> </th>
+        <th>scale model </th>
+        <th>scale x 0.5 yz 2.8 </th>
     </tr>
     <tr>
         <th><b>rotate xyz degree</b> </th>
-        <th><b>rotate model</b> </th>
-        <th><b>rotate x 30</b> </th>
+        <th>rotate model </th>
+        <th>rotate x 30 </th>
     </tr>
     <tr>
         <th><b>repeat xyz num</b> </th>
-        <th><b>repeat model, negative value for mirror repeat</b> </th>
-        <th><b>repeat xy 4 z -0.5</b> </th>
-    </tr>
-    <tr>
-        <td><b>rand [min max]</b> </td>
-        <td>paint model with random color index between min and max </td>
-        <td>rand 10 15 </td>
+        <th>repeat model, negative value for mirror repeat </th>
+        <th>repeat xy 4 z -0.5 </th>
     </tr>
     <tr>
         <td><b>flood [colorIndex]</b></td>
@@ -51,6 +46,16 @@
         <td><b>noise [seed scale min max]</b> </td>
         <td>default value : scale = 0.03 min = 0.2 max = 0.5 </td>
         <td>noise 123 0.03 0.2 0.5 </td>
+    </tr>
+    <tr>
+        <td><b>rand [min max]</b> </td>
+        <td>paint model with random color index between min and max </td>
+        <td>rand 10 15 </td>
+    </tr>
+    <tr>
+        <td><b>maze [edge length]</b></td>
+        <td>generate maze shape</td>
+        <td>maze 8</td>
     </tr>
     <tr>
         <td><b>pal mask</b> </td>
@@ -76,11 +81,6 @@
         <td><b>ero [axis]</b></td>
         <td>erosion</td>
         <td>ero +z-yx (positive z, negative y, both direction x)</td>
-    </tr>
-    <tr>
-        <td><b>maze [edge length]</b></td>
-        <td>generate maze shape</td>
-        <td>maze 8</td>
     </tr>
     <tr>
         <td><b>o [file type]</b> </td>
