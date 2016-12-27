@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h3><strong>MagicaVoxel @ ephtracy (Win/Mac) 0.98 [10/30/2016]</strong></h3>
+<h3><strong>MagicaVoxel @ ephtracy (Win/Mac) 0.98.1 Beta [12/27/2016]</strong></h3>
 <p>
     <li>a free lightweight 8-bit voxel editor and interactive path tracing renderer, enjoy:)</li>
     <li>standalone voxel renderer can be found here (2048^3 volume and minecraft scene) : <a href="http://ephtracy.github.io/index.html?page=mv_renderer"><strong>MagicaVoxel Viewer</strong></a> </li>
@@ -87,7 +87,7 @@
 </div>
 
 <div>
-    <a class="btn btn-primary btn-lg" href="http://23.98.147.40/uploads/MagicaVoxel-0.98-win-mac.zip" role="button">Download</a>
+    <a class="btn btn-primary btn-lg" href="http://23.98.147.40/uploads/MagicaVoxel-0.98.1-win-mac-beta.zip" role="button">Download</a>
     <!--<a class="btn btn-primary btn-lg" role="button" style="" onclick="$('#mv_file_stash').click()">All Files</a>-->
     <!--<a class="btn btn-primary btn-lg" role="button" style="" onclick="$('#mv_file_stash').click()">All Files</a>-->
     
@@ -107,6 +107,49 @@
     <li><strong>if you get "App can't be opened" message on MacOS, try this in terminal:</strong>
         <ul>
             <li><strong>chmod +x [directory]/MagicaVoxel-mac.app/Contents/MacOS/MagicaVoxel</strong></li>
+        </ul>
+    </li>
+</div>
+
+<br>
+<div>
+    <li> <strong>Updates 0.98.1 Beta [12/27/2016] </strong> </li>
+    <li> * Beta Version </li>
+    <li> 1. Selection
+        <ul>
+            <li> new "Box/Rect/Region" Selection Brushes </li>
+            <li> new Selection Tools "Edit->Select" : Copy/Paste, Deselect/Inverse Select, etc.</li>
+            <li> "Attach/Erase/Paint" Brushes can only operate on unselected voxels </li>
+            <li> "Move/Remove Color/Replace Color" Brushes can operate on both selected and unselected voxels </li>
+            <li> Edit Tools can only operate on selected voxels </li>
+            <li> Transform Tools "Flip/Rot/Loop/Scale/Repeat" modify selected voxels around local center </li>
+            <li> "Export" only exports selected voxels if selection exists </li>
+        </ul>
+    </li>
+    <li> 2. Selection Brushes
+        <ul>
+            <li> [+SHIFT] to add selection, [+SHIFT+ALT] to subtract selection</li>
+            <li> Box Select : select voxels within a box </li>
+            <li> Rect Select : select voxels within a screen rect : [K+RButton] click voxel to navigate to 90 degree view</li>
+            <li> Region Select : select voxels within same volume, same face, or with same color</li>
+        </ul>
+    </li>    
+    <li> 3. Pattern Brush
+        <ul>
+            <li> can create Pattern directly from selection : very helpful for texturing surface/duplicating small shapes </li>
+            <li> can rotate Pattern around z, x, y axes with keys "-/+, 9, 0"</li>
+        </ul>
+    </li>
+    <li> 4. Bounding Box and Frame Grids
+        <ul>
+            <li> can select on all six faces of bounding box now </li>
+            <li> View->Frame : can change spacing, very helpful for measurement </li>
+        </ul>
+    </li>    
+    <li> 5. ACES Filmic Tone Mapping
+        <ul>
+            <li> View->ton : ACES </li>
+            <li> View->dof : Depth of Field, click voxel with LButton to set camera focus </li>
         </ul>
     </li>
 </div>
