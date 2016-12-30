@@ -15,6 +15,7 @@ html, body {
     background-color: #222222;
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
+    font-weight: 200;
 }
 
 .navbar-nav li {
@@ -41,8 +42,13 @@ html, body {
     background-color: #222222;
 }
 
+.jumbotron p {
+    font-size: 16px !important;
+}
+
 .jumbotron li {
     list-style: none;
+    font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
 }
 
 .squarelist li {

@@ -18,32 +18,32 @@
         <th><b>Example</b> </th>
     </tr>
     <tr>
-        <td><b>scale [xyz] [factor]</b> </td>
+        <td>scale <span class="text-warning">[xyz] [factor]</span></td>
         <td>scale model (xyz is optional) </td>
         <td>scale x 0.5 yz 2.8 / scale 2.0</td>
     </tr>
     <tr>
-        <td><b>rot [xyz] [degree]</b> </td>
+        <td>rot <span class="text-warning">[xyz] [degree]</span> </td>
         <td>rotate model </td>
         <td>rot x 30 </td>
     </tr>
     <tr>
-        <td><b>repeat [xyz] [factor]</b> </td>
+        <td>repeat <span class="text-warning">[xyz] [factor]</span> </td>
         <td>repeat model, negative value for mirror repeat (xyz is optional)</td>
         <td>repeat xy 4 z -0.5 / repeat 2.0</td>
     </tr>
     <tr>
-        <td><b>mir [axis]</b> </td>
+        <td>mir <span class="text-warning">[axis]</span> </td>
         <td>mirror symmetry, default axis is x</td>
         <td>mir x / mir</td>
     </tr>
     <tr>
-        <td><b>dia [axis]</b> </td>
+        <td>dia <span class="text-warning">[axis]</span> </td>
         <td>diagonal symmetry, default axis is z</td>
         <td>dia x / dia</td>
     </tr>
     <tr>
-        <td><b>flood [colorIndex]</b></td>
+        <td>flood <span class="text-warning">[colorIndex]</span> </td>
         <td>if colorIndex == 0, remove all invisible voxels</td>
         <td>flood 0</td>
     </tr>
@@ -53,57 +53,57 @@
         <td>flood 73 </td>
     </tr>
     <tr>
-        <td><b>noise [seed scale min max]</b> </td>
+        <td>noise <span class="text-warning">[seed scale min max]</span> </td>
         <td>default value : scale = 0.03 min = 0.2 max = 0.5 </td>
         <td>noise 123 0.03 0.2 0.5 </td>
     </tr>
     <tr>
-        <td><b>rand [min max]</b> </td>
+        <td>rand <span class="text-warning">[min max]</span> </td>
         <td>paint model with random color index between min and max </td>
         <td>rand 10 15 </td>
     </tr>
     <tr>
-        <td><b>maze [edge length]</b></td>
+        <td>maze <span class="text-warning">[edge length]</span> </td>
         <td>generate maze shape</td>
         <td>maze 8</td>
     </tr>
     <tr>
-        <td><b>pal mask</b> </td>
+        <td>pal mask </td>
         <td>mask out all unused color swatches</td>
         <td></td>
     </tr>
     <tr>
-        <td><b>pal fill [index]</b> </td>
+        <td>pal fill <span class="text-warning">[index]</span> </td>
         <td>fill palette with chosen color index</td>
         <td>pal fill 100</td>
     </tr>
     <tr>
-        <td><b>pal bw/mac</b> </td>
+        <td>pal bw/mac </td>
         <td>generate grey or default mac palette </td>
         <td>pal bw</td>
     </tr>
     <tr>
-        <td><b>dil [axis]</b></td>
+        <td>dil <span class="text-warning">[axis]</span></td>
         <td>dilation</td>
         <td>dil +z (only positive direction), dil xyz (both positive and negative direction)</td>
     </tr>
     <tr>
-        <td><b>ero [axis]</b></td>
+        <td>ero <span class="text-warning">[axis]</span></td>
         <td>erosion</td>
         <td>ero +z-yx (positive z, negative y, both direction x)</td>
     </tr>
     <tr>
-        <td><b>o [file type]</b> </td>
+        <td>o <span class="text-warning">[file type]</span> </td>
         <td>export model </td>
         <td>o obj </td>
     </tr>
     <tr>
-        <td><b>odir [file type] </b></td>
+        <td>odir <span class="text-warning">[file type] </span></td>
         <td>export all models in current folder displayed in model list </td>
         <td>odir obj </td>
     </tr>
     <tr>
-        <td><b>xs [option] [shader name] [arg0] [arg1] ... </b> </td>
+        <td>xs <span class="text-warning">[option] [shader name] [arg0] [arg1] ... </b> </td>
         <td>generate model/anim by custom voxel shader in folder [shader/] </td>
         <td>xs wave (-n : num interations; -prev : based on previoud frame; -cur : based on current frame )</td>
     </tr>
