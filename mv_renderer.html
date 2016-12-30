@@ -1,13 +1,19 @@
 <!-- ephtracy content page --->
 
-<h3><strong>MagicaVoxel Viewer @ ephtracy (Win/Mac 0.41)</strong></h3>
+<h2>MagicaVoxel Viewer @ ephtracy (Win/Mac 0.41)</h2>
+
 <p>
-    <li>a free interactive voxel path tracing renderer, enjoy!</li>
+    <li>A free interactive voxel path tracing renderer, enjoy!</li>
     <li>Sparse volume size up to 2048^3</li>
     <li>8-bit or 16-bit color palette (.xraw)</li>
     <li>Minecraft schematic model (.schematic)</li>
-    <li><a href="https://youtu.be/oedEhpRgqG4"><strong>Tutorial Video</strong></a> </li>
+    <li><a href="https://youtu.be/oedEhpRgqG4">Tutorial Video</a></li>
 </p>
+
+<div>
+    <a class="btn btn-primary" href="http://23.98.147.40/uploads/MagicaVoxel Viewer-win-mac.zip" role="button">Download</a>
+</div>
+
 <div id="mv-carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -71,27 +77,40 @@
     </a>
 </div>
 
-<div>
-    <a class="btn btn-primary btn-lg" href="http://23.98.147.40/uploads/MagicaVoxel Viewer-win-mac.zip" role="button">Download</a>
-    <!--<a class="btn btn-default btn-lg" href="https://www.dropbox.com/sh/fnp7cn69yzrlcgh/AAA1AKNGjSYO5rfXW-wOklIWa?dl=0" role="button" style="margin-left: 80px">Dropbox</a> -->
+<div class="panel panel-primary" id="update_log_container">
+  <div class="panel-heading">
+    <h3 class="panel-title">Update Logs:</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#update_040_1" data-toggle="tab" aria-expanded="true">0.41</a></li>
+      <li class=""><a href="#update_040" data-toggle="tab" aria-expanded="false">0.40</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade active in" id="update_040_1">
+        <br/>
+        <p>03/07/2016</p>
+        <ul class="squarelist">
+            <li>Color Picker : "ALT+LButton" to choose ground or voxel, then modify its color in HSV/RGB section</li>
+            <li>Open Model "CTRL+O" /Save Screenshot "F6" Dialog</li>
+            <li>Camera : "MButton" Move Camera, "F5/F7" Save/Load Camera Pose, "X+RButton" Set Camera Focus </li>
+            <li>Simplified UI (close to editor version)</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="update_040">
+        <br/>
+        <p>10/17/2015</p>
+        <ul class="squarelist">
+            <li>Sparse volume size up to 2048^3</li>
+            <li>8-bit or 16-bit color palette (.xraw)</li>
+            <li>Normal mapped voxels (voxelization of .obj)</li>
+            <li>Rendering at different level of detail (LOD)</li>
+            <li>Sparse voxel octree (.rsvo)</li>
+            <li>Minecraft schematic model (.schematic)</li>
+            <li>Grayscaleimage as heightmap (.png)</li>
+            <li>LIDAR heightmap (.asc)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
-
-<br>
-<div>
-    <li><strong>Updates 0.41 [03/07/2016]</strong></li>
-    <li>1. Color Picker : "ALT+LButton" to choose ground or voxel, then modify its color in HSV/RGB section</li>
-    <li>2. Open Model "CTRL+O" /Save Screenshot "F6" Dialog</li>
-    <li>3. Camera : "MButton" Move Camera, "F5/F7" Save/Load Camera Pose, "X+RButton" Set Camera Focus </li>
-    <li>4. Simplified UI (close to editor version)</li>
-    <br>
-    <li><strong>Updates 0.40 [10/17/2015]</strong></li>
-    <li>1. Sparse volume size up to 2048^3</li>
-    <li>2. 8-bit or 16-bit color palette (.xraw)</li>
-    <li>3. Normal mapped voxels (voxelization of .obj)</li>
-    <li>4. Rendering at different level of detail (LOD)</li>
-    <li>5. Sparse voxel octree (.rsvo)</li>
-    <li>6. Minecraft schematic model (.schematic)</li>
-    <li>7. Grayscaleimage as heightmap (.png)</li>
-    <li>8. LIDAR heightmap (.asc)</li>
-</div>
-
