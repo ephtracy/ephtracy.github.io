@@ -46,6 +46,14 @@ html, body {
     font-size: 16px !important;
 }
 
+.btn-link {
+    font-weight: 200;
+}
+
+.btn {
+    font-weight: 200;
+}
+
 .jumbotron li {
     list-style: none;
     font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
