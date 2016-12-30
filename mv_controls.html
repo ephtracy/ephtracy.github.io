@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
-<h3><strong>Shortcut</strong></h3>
-<li><strong>MacOS : Use Command instead of Ctrl</strong></li>
+<h2>Shortcut</h2>
+<p>macOS : Use <span class="text-warning">Command</span> instead of <span class="text-warning">Ctrl</span></p>
 <table class="table table-bordered" width = "400" >
     <tbody>
     <tr>
@@ -9,7 +9,7 @@
         <th><b>Modifier</b> </th>
     </tr>
     <tr>
-        <td><b>Console</b></td>
+        <td><span class="text-warning">>> Console</span></td>
         <td></td>
     </tr>
     <tr>
@@ -22,13 +22,13 @@
         <td>+CTRL : for whole window </td>
     </tr>
     <tr>
-        <td><b>Camera</b></td>
+        <td><span class="text-warning">>> Camera</span></td>
         <td></td>
     </tr>
     <tr>
         <td>RButton </td>
         <td>rotate camera </td>
-        <td>=LButton+N </td>
+        <td>=LButton+M </td>
     </tr>
     <tr>
         <td>MButton </td>
@@ -42,6 +42,14 @@
     <tr>
         <td>RButton+X </td>
         <td>set camera focus </td>
+    </tr>
+    <tr>
+        <td>RButton+K </td>
+        <td>navigate to 90 degree view </td>
+    </tr>
+    <tr>
+        <td>RButton+Ruler </td>
+        <td>snap camera angle to multiples of 5 degrees</td>
     </tr>
     <tr>
         <td>WASDQE </td>
@@ -60,7 +68,7 @@
         <td>load current camera pose </td>
     </tr>
     <tr>
-        <td><b>Edit</b></td>
+        <td><span class="text-warning">>> Edit</span></td>
         <td></td>
     </tr>
     <tr>
@@ -73,7 +81,35 @@
         <td>=CTRL+SHIFT+Z </td>
     </tr>
     <tr>
-        <td><b>Model File</b></td>
+        <td><span class="text-warning">>> Select</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CTRL+A </td>
+        <td>select all </td>
+    </tr>
+    <tr>
+        <td>CTRL+R </td>
+        <td>select inverse </td>
+    </tr>
+    <tr>
+        <td>CTRL+D </td>
+        <td>deselect all </td>
+    </tr>
+    <tr>
+        <td>CTRL+C </td>
+        <td>copy voxels </td>
+    </tr>
+    <tr>
+        <td>CTRL+X </td>
+        <td>cut voxels </td>
+    </tr>
+    <tr>
+        <td>CTRL+V </td>
+        <td>paste voxels </td>
+    </tr>
+    <tr>
+        <td><span class="text-warning">>> Model File</span></td>
         <td></td>
     </tr>
     <tr>
@@ -101,7 +137,7 @@
         <td>Duplicate model </td>
     </tr>
     <tr>
-        <td><b>Model Edit</b></td>
+        <td><span class="text-warning">>> Model Edit</span></td>
         <td></td>
     </tr>
     <tr>
@@ -115,9 +151,10 @@
     <tr>
         <td>Backspace </td>
         <td>empty model </td>
+        <td>=Delete</td>
     </tr>
     <tr>
-        <td><b>Brush Shape</b></td>
+        <td><span class="text-warning">>> Brush Shape</span></td>
         <td></td>
     </tr>
     <tr>
@@ -144,9 +181,20 @@
     <tr>
         <td>P </td>
         <td><b>P</b>attern shape brush </td>
+        <td>+/-, 9, 0 : rotate around z, x, y axis</td>
     </tr>
     <tr>
-        <td><b>Brush Type</b></td>
+        <td></td>
+        <td></td>
+        <td>Arrow/Page keys : add local offset to pattern model</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>Home key : reset local offset to 0</td>
+    </tr>
+    <tr>
+        <td><span class="text-warning">>> Brush Type</span></td>
     </tr>
     <tr>
         <td>ALT+LButton </td>
@@ -155,7 +203,7 @@
     <tr>
         <td>CTRL+LButton </td>
         <td>move model </td>
-        <td>+SHIFT : 2d version </td>
+        <td>+SHIFT : move in normal direction </td>
     </tr>
     <tr>
         <td>LButton [Renderer Mode]</td>
@@ -180,23 +228,13 @@
         <td>paint brush </td>
     </tr>
     <tr>
-        <td><b>Pattern Brush</b></td>
-        <td></td>
+        <td>N </td>
+        <td>selection brush </td>
+        <td>+SHIFT : add selection; +SHIFT+ALT : subtract selection</td>
     </tr>
     <tr>
-        <td>+/- </td>
-        <td>rotate around z axis </td>
-    </tr>
     <tr>
-        <td>DIR/PAGE </td>
-        <td>local offset </td>
-    </tr>
-    <tr>
-        <td>0 </td>
-        <td>reset local offset and orientation</td>
-    </tr>
-    <tr>
-        <td><b>Mirror Mode </b></td>
+        <td><span class="text-warning">>> Mirror Mode </span></td>
         <td></td>
     </tr>
     <tr>
@@ -212,7 +250,7 @@
         <td>mirror z </td>
     </tr>
     <tr>
-        <td><b>Axis Mode </b></td>
+        <td><span class="text-warning">>> Axis Mode </span></td>
         <td></td>
     </tr>
     <tr>
@@ -228,7 +266,7 @@
         <td>loft z </td>
     </tr>
     <tr>
-        <td><b>Render</b></td>
+        <td><span class="text-warning">>> Render</span></td>
         <td></td>
     </tr>
     <tr>
@@ -244,8 +282,8 @@
         <td>display <b>F</b>rame </td>
     </tr>
     <tr>
-        <td>CTRL+R </td>
-        <td>display g<b>R</b>ound </td>
+        <td>CTRL+U </td>
+        <td>display gro<b>U</b>nd </td>
     </tr>
     <tr>
         <td>CTRL+B </td>
@@ -256,28 +294,12 @@
         <td>display shado<b>W</b> </td>
     </tr>
     <tr>
-        <td>CTRL+SHIFT+V </td>
-        <td>display <b>V</b>oxel </td>
-    </tr>
-    <tr>
-        <td>CTRL+SHIFT+M </td>
-        <td>advance render <b>M</b>ode </td>
-    </tr>
-    <tr>
-        <td>CTRL+SHIFT+Y </td>
-        <td>display ambient light </td>
-    </tr>
-    <tr>
-        <td><b>Palette</b></td>
+        <td><span class="text-warning">>> Palette</span></td>
         <td></td>
     </tr>
     <tr>
         <td>CTRL+DRAG </td>
         <td>duplicate color </td>
-    </tr>
-    <tr>
-        <td>ALT+DRAG </td>
-        <td>swap color </td>
     </tr>
     <tr>
         <td>CTRL+SHIFT+DRAG </td>

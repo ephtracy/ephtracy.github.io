@@ -1,6 +1,6 @@
 .carousel-inner > .item > img {
-    margin: 0 auto;
-    height: 500px;
+    margin: 20px auto;
+    height: 460px;
 }
 
 .carousel-control {
@@ -12,22 +12,14 @@
 }
 
 html, body {
-    background-color: #eee;
+    background-color: #222222;
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
+    font-weight: 200;
 }
 
 .navbar-nav li {
     
-}
-
-.footer {
-	background:#333;
-}
-
-.footer p {
-	margin:20px 0;
-    margin-right: 60px;
 }
 
 .footer p {
@@ -46,6 +38,27 @@ html, body {
     margin-left: 16px;
 }
 
+.jumbotron {
+    background-color: #222222;
+}
+
 .jumbotron p {
- font-size: 16px !important;   
+    font-size: 16px !important;
+}
+
+.btn-link {
+    font-weight: 200;
+}
+
+.btn {
+    font-weight: 200;
+}
+
+.jumbotron li {
+    list-style: none;
+    font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
+}
+
+.squarelist li {
+    list-style: square;
 }
