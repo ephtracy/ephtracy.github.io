@@ -7,6 +7,12 @@
     background-image: none !important;
 }
 
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:11px !important; padding-bottom:5px !important;
+    height: 40px;
+}
+.navbar {min-height:40px !important;}
+
 #mv-carousel {
     margin-bottom: 20px;
 }
@@ -43,7 +49,7 @@ html, body {
 }
 
 .jumbotron p {
-    font-size: 16px !important;
+    font-size: 16px;
 }
 
 .btn-link {
@@ -60,5 +66,13 @@ html, body {
 }
 
 .squarelist li {
-    list-style: square;
+    list-style: square !important;
+}
+
+.decimallist li {
+    list-style: decimal;
+}
+
+.updatelog_header {
+    font-size: 23px;
 }

@@ -41,6 +41,10 @@
                 else {
                     $('li.active a').trigger('click')
                 }
+                
+                var shiftWindow = function() { scrollBy(0, -40) };
+                window.addEventListener("hashchange", shiftWindow);
+                function load() { if (window.location.hash) shiftWindow(); }
             });
         </script>
     </head>
@@ -50,12 +54,12 @@
     <div class="navbar navbar-default navbar-fixed-top">
        <div class="container">
            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mv_nav">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                    </button>
+                    <span class="icon-bar"></span>
+                </button>
 
                 <a class="navbar-brand" href="#">
                     E
@@ -63,7 +67,7 @@
             </div>
             
 
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="mv_nav">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.html?page=mv_main" id="mv_main" class="mv_load_content" mv_content_ref="mv_main.html">MagicaVoxel</a></li>
                     <li><a href="index.html?page=mv_renderer" id="mv_renderer" class="mv_load_content" mv_content_ref="mv_renderer.html">Viewer</a></li>
