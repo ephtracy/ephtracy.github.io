@@ -8,6 +8,7 @@
     Press <strong>TAB</strong> to Enable/Enter Commands          <br/>
     Press <strong>Enter</strong> to Enter Commands               <br/>
     Press <strong>UP/DOWN</strong> to Select History Input       <br/>
+    * Can input multiple commands together with | separator, e.g. "copy | paste" <br/>
 </p>
 
 <table class="table table-bordered">
@@ -18,9 +19,84 @@
         <th><b>Example</b> </th>
     </tr>
     <tr>
+        <td>sel_none</td>
+        <td>select none</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>sel_all</td>
+        <td>select all</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>sel_inv</td>
+        <td>select inverse</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>copy</td>
+        <td>copy voxels</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cuty</td>
+        <td>cut voxels</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>paste</td>
+        <td>paste voxels</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>size <span class="text-warning">[x y z]</span></td>
+        <td>resize model</td>
+        <td>size 45 60 120</td>
+    </tr>
+    <tr>
+        <td>shrink</td>
+        <td>fit model size</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>zero</td>
+        <td>clear all voxels</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>full</td>
+        <td>full volume</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>fill</td>
+        <td>paint all voxels with same color</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>inv</td>
+        <td>inverse solid and empty space</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>flip <span class="text-warning">[axis]</span></td>
+        <td>flip model</td>
+        <td>flip x y</td>
+    </tr>
+    <tr>
+        <td>loop <span class="text-warning">[axis] [offset]</span></td>
+        <td>move model</td>
+        <td>loop z 1 x -2</td>
+    </tr>
+    <tr>
         <td>scale <span class="text-warning">[xyz] [factor]</span></td>
         <td>scale model (xyz is optional) </td>
-        <td>scale x 0.5 yz 2.8 / scale 2.0</td>
+        <td>scale x 0.5 yz 2.8 | scale 2.0</td>
+    </tr>
+    <tr>
+        <td>x2</td>
+        <td>double model size</td>
+        <td></td>
     </tr>
     <tr>
         <td>rot <span class="text-warning">[xyz] [degree]</span> </td>
@@ -28,19 +104,34 @@
         <td>rot x 30 </td>
     </tr>
     <tr>
+        <td>rot90 <span class="text-warning">[axis]</span> </td>
+        <td>rotate model 90 degree </td>
+        <td>rot90 x </td>
+    </tr>
+    <tr>
         <td>repeat <span class="text-warning">[xyz] [factor]</span> </td>
         <td>repeat model, negative value for mirror repeat (xyz is optional)</td>
-        <td>repeat xy 4 z -0.5 / repeat 2.0</td>
+        <td>repeat xy 4 z -0.5 | repeat 2.0</td>
     </tr>
     <tr>
         <td>mir <span class="text-warning">[axis]</span> </td>
         <td>mirror symmetry, default axis is x</td>
-        <td>mir x / mir</td>
+        <td>mir x | mir</td>
     </tr>
     <tr>
         <td>dia <span class="text-warning">[axis]</span> </td>
         <td>diagonal symmetry, default axis is z</td>
-        <td>dia x / dia</td>
+        <td>dia x | dia</td>
+    </tr>
+    <tr>
+        <td>dil <span class="text-warning">[axis]</span></td>
+        <td>dilation</td>
+        <td>dil +z (only positive direction) | dil xyz (both positive and negative direction)</td>
+    </tr>
+    <tr>
+        <td>ero <span class="text-warning">[axis]</span></td>
+        <td>erosion</td>
+        <td>ero +z-yx (positive z, negative y, both direction x)</td>
     </tr>
     <tr>
         <td>flood <span class="text-warning">[colorIndex]</span> </td>
@@ -83,19 +174,9 @@
         <td>pal bw</td>
     </tr>
     <tr>
-        <td>dil <span class="text-warning">[axis]</span></td>
-        <td>dilation</td>
-        <td>dil +z (only positive direction), dil xyz (both positive and negative direction)</td>
-    </tr>
-    <tr>
-        <td>ero <span class="text-warning">[axis]</span></td>
-        <td>erosion</td>
-        <td>ero +z-yx (positive z, negative y, both direction x)</td>
-    </tr>
-    <tr>
         <td>o <span class="text-warning">[file type]</span> </td>
         <td>export model </td>
-        <td>o obj </td>
+        <td>o obj | o slice</td>
     </tr>
     <tr>
         <td>odir <span class="text-warning">[file type] </span></td>
