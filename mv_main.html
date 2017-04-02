@@ -113,6 +113,7 @@
 <div class="row">
     <div class="col-lg-2 col-md-2 col-sm-3">
         <div class="list-group table-of-contents">
+          <a href="#update_098_2" class="list-group-item">0.98.2</a>
           <a href="#update_098_1" class="list-group-item">0.98.1 Beta</a>
           <a href="#update_098" class="list-group-item">0.98</a>
           <a href="#update_097_5" class="list-group-item">0.97.5</a>
@@ -135,6 +136,44 @@
           </div>
           <div class="panel-body">
 
+          <div id="update_098_2">
+            <div class="updatelog_header text-warning">0.98.2 - 4/2/2017</div>
+            <ul class="decimallist">
+                 <li>Bloom
+                    <ul class="squarelist">
+                        <li> click the button in Bloom section to calculate bloom effect when any rendeirng setting has been changed </li>
+                        <li> it has its own progress bar, and use the same number of samples on the top </li>
+                        <li> adjust the weight with the slider, it will not restart rendering</li>
+                    </ul>
+                </li>
+                <li>Pause Rendering and Instant Feedback
+                    <ul class="squarelist">
+                        <li> click Image->"||" to pause progressive rendering </li>
+                        <li> enable "Sample->GI" </li>
+                        <li> every change of material will immediately displayed in viewport </li>
+                        <li> *expensive option, higher end GPU recommended</li>
+                    </ul>
+                </li>
+                <li>Sky Background
+                    <ul class="squarelist">
+                        <li> enable "View->Back" [CTRL+B] to display sky as background</li>
+                        <li> the fading ground into horizon is controled by Fog slider</li>
+                        <li> for real fog, enable "Fog" firstly</li>
+                    </ul>
+                </li>
+                <li>Ground Material
+                    <ul class="squarelist">
+                        <li> now you can "Alt+LButton" click the ground, and assign Metal material to it </li>
+                    </ul>
+                </li>
+                <li>Pixelated Rendering
+                    <ul class="squarelist">
+                        <li> turn off "View->AA" to disable Anti-Aliasing and set image size small (128, e.g.)</li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+              
           <div id="update_098_1">
             <div class="updatelog_header text-warning">0.98.1 Beta - 12/30/2016</div>
             <ul class="decimallist">
@@ -184,7 +223,7 @@
                     </ul>
                 </li>
               </ul>
-              </div>
+            </div>
 
               <div id="update_098">
                 <div class="updatelog_header text-warning">0.98 - 10/22/2016</div>
