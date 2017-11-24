@@ -1,11 +1,13 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy (Win/Mac) - 0.98.2 [4/1/2017]</h2>
+<h2>MagicaVoxel @ ephtracy (Win/Mac) - 0.99 [11/23/2017]</h2>
 
 <p>A free lightweight 8-bit voxel editor and interactive path tracing renderer, enjoy :)  <a class="btn btn-link" href="https://youtu.be/d_WymsNdRBA" role="button">Tutorial</a></p>
 <p><b>License</b> : feel free to use it for any project, no commercial licences required, credits are appreciated</p>
 
 <div>
+    <a class="btn btn-primary" href="http://192.241.207.218/uploads/MagicaVoxel 0.99-alpha-win.zip" role="button">[win32] 0.99a</a> 
+    <a class="btn btn-primary" href="http://192.241.207.218/uploads/MagicaVoxel 0.99-alpha-mac.zip" role="button">[macOS] 0.99a</a>
     <a class="btn btn-primary" href="http://192.241.207.218/uploads/MagicaVoxel-0.98.2-win.zip" role="button">[win32] 0.98.2</a> 
     <a class="btn btn-primary" href="http://192.241.207.218/uploads/MagicaVoxel-0.98.2-mac.zip" role="button">[macOS] 0.98.2</a>
 <!--    <a class="btn btn-link" href="#update_log_container" role="button">Update Log</a>-->
@@ -155,7 +157,7 @@
           <div class="panel-body">
 
           <div id="update_099">
-            <div class="updatelog_header text-warning">0.99 - 11/??/2017</div>
+            <div class="updatelog_header text-warning">0.99 - 11/23/2017</div>
             <ul class="decimallist">
                  <li>World Editor
                     <ul class="squarelist">
@@ -164,10 +166,12 @@
                         <li> group objects</li>
                         <li> reference objects/groups : modify one of references will affect the others </li>
                         <li> transform objects : rotate, flip, move</li>
-                        <li> rectangle select brush : "SHIFT" to add selection, "ALT+SHIFT" to remove selection </li>
-                        <li> translation gizmo and free move tool : "Shift+move" to get a referenced copy </li>
+                        <li> rectangle select : "SHIFT" to add selection, "ALT+SHIFT" to remove selection </li>
+                        <li> translation gizmo and free movement : "Shift+move" to get a referenced copy </li>
+                        <li> union combine objects </li>
+                        <li> copy/paste objects between world editor and model editor </li>
                         <li> hide objects </li>
-                        <li> change order of objects for drawing </li>
+                        <li> change order of objects for drawing and combination</li>
                         <li> layers : to hide objects with same layer tag </li>
                         <li> hotkey "TAB" to switch between model editor and world editor</li>
                         <li> hotkey "TAB"/"SHIFT+TAB" to enter/leave groups</li>
@@ -206,10 +210,18 @@
                 
                 <li>UI
                     <ul class="squarelist">
-                        <li> ui scaling for high dpi screen : enter "ui scale 1.5" in console </li>
-                        <li> panel is scalable </li>
-                        <li> palette pick color from screen : "ALT+left drag" </li>
+                        <li> ui scaling for high dpi screen : enter "ui scale 1.5" in console or change "ui_scale" in config.txt</li>
+                        <li> panel is scalable (some uis are hidden behind) </li>
+                        <li> palette : pick color from screen : "ALT+left drag" </li>
                         <li> lower CPU usage : only redraw when needed" </li>
+                    </ul>
+               </li>
+                
+                <li>Limitation : will be improved in future version
+                    <ul class="squarelist">
+                        <li> Export : can only export single models, cannot export models with offsets and names </li>
+                        <li> Render : no voxel shape </li>
+                        <li> Animation : no frame based animation </li>
                     </ul>
                </li>
              </ul>
