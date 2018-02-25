@@ -83,5 +83,6 @@ html, body {
 }
 
 .updatelog_header {
-    font-size: 23px;
+	  font-size: 23px;
+	  margin-left: 10px;
 }
