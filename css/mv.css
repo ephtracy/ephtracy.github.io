@@ -2,6 +2,10 @@ kbd {
 	background-color: #232323 !important;
 }
 
+.panel-warning > .panel-heading > .panel-title {
+	color: #222222;
+}
+
 #version {
 	font-size: 22px;
 }
