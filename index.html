@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <meta charset="utf-8">
         <title>MagicaVoxel</title>
@@ -16,7 +16,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 
         <script src="js/vertical-scroll.js"></script>
-        
+
         <script>
             $(function() {
                 $('.mv_load_content').click(function() {
@@ -24,25 +24,25 @@
                     var content_src = c.attr('mv_content_ref');
 
                     $('#mv_content').load(content_src);
-                    
+
                     $('li').removeClass('active')
                     c.parent().addClass('active')
                 });
-                
+
                 function qs(key) {
-                    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); 
+                    key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&");
                     var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
                     return match && decodeURIComponent(match[1].replace(/\+/g, " "));
                 }
 
-                var page = qs('page'); 
+                var page = qs('page');
                 if (page != undefined && page.length > 0) {
                     $('#' + page).click()
                 }
                 else {
                     $('li.active a').trigger('click')
                 }
-                
+
                 var shiftWindow = function() { scrollBy(0, -40) };
                 window.addEventListener("hashchange", shiftWindow);
                 function load() { if (window.location.hash) shiftWindow(); }
@@ -51,7 +51,7 @@
     </head>
 
 <body>
-    
+
     <div class="navbar navbar-default navbar-fixed-top">
        <div class="container">
            <div class="navbar-header">
@@ -66,7 +66,7 @@
                     E
                 </a>
             </div>
-            
+
 
             <div class="collapse navbar-collapse" id="mv_nav">
                 <ul class="nav navbar-nav">
@@ -86,18 +86,18 @@
         <div>
             <div class="jumbotron">
                 <div class="container"  id="mv_content">
-                    
+
                 </div>
             </div>
         </div>
-        
+
     </div>
 
     <div class="footer">
         <div class="container">
-            <p class="pull-right">Copyright &copy; ephtracy 2013-2017</p>
+            <p class="pull-right">Copyright &copy; ephtracy 2013-2018</p>
         </div>
     </div>
 </body>
-    
+
 </html>
