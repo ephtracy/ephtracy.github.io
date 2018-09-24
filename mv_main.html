@@ -152,12 +152,24 @@
                 <div id="update_099_2">
                     <div class="updatelog_header text-warning">0.99.2 - ?/??/20??</div>
                     <ul class="decimallist">
-                        <li>Renderer (hidden menu)
+                        <li>New Interface
                             <ul class="squarelist">
-                                <li> Large Sparse Volume: the rendering volume increases to <kbd>2048x2048x1024</kbd>. But there is still limits on the total number of solid voxels.</li>
+                                <li> Redesigned the interface</li>
+                                <li> Slider view: mouse wheel, or drag on the scroll bar or panel to scroll the panel; can also resize the panel</li>
+                                <li> SDF font rendering</li>
+                                <li> <kbd>CTRL+Wheel</kbd> or <kbd>CTRL+/-</kbd> to scale UI size</li>
+                                <li> a basic object list to show the scene graph</li>
+                            </ul>
+                        </li>
+                        
+                        <li>Renderer
+                            <ul class="squarelist">
+                                <li> Large Sparse Volume [Sample->SV]: the rendering volume increases to <kbd>2048x2048x1024</kbd>. But there is still limits on the total number of solid voxels.</li>
                                 <li> Voxel Shapes: new <kbd>Clay</kbd> shape with the previous supported shapes (<kbd>Lego</kbd>, <kbd>Marching Cubes</kbd>, etc.)</li>
-                                <li> World Scale: rectangular voxels (left hidden panel)</li>
+                                <li> World Scale: rectangular voxels</li>
                                 <li> Pixelated Illumination: <kbd>Sample->PX</kbd></li>
+                                <li> Can show sun disk in the sky; added Ozone attenuation</li>
+                                <li> Fix bugs in orthogonal views</li>
                             </ul>
                         </li>
 
@@ -168,10 +180,11 @@
                                 <li> cmd <kbd>pal sort [+-hsvrgb]</kbd>: sort palette colors (e.g. <kbd>pal sort vsh</kbd>) </li>
                             </ul>
                         </li>
-
-                        <li>UI
+                        
+                        <li>Voxel Shader
                             <ul class="squarelist">
-                                <li> <kbd>CTRL +/-</kbd>: increase/decrease UI size </li>
+                                <li> add <kbd>xs_shader</kbd> in config.txt</li>
+                                <li> can execute subfolder shaders: <kbd>xs sub/poly</kbd> </li>
                             </ul>
                         </li>
                 </div>
