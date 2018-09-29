@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.1 [3/12/2018]</span></h2>
+<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.2 [9/29/2018]</span></h2>
 
 <p>A free lightweight 8-bit voxel art editor and interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/d_WymsNdRBA" role="button">Tutorial</a></p>
 <li><b>License</b>
@@ -15,10 +15,10 @@
     <a class="btn btn-link" href="https://ephtracy.github.io/index.html?page=mv_renderer" role="button">1. MagicalVoxel Viewer</a>
     <a class="btn btn-link" href="https://github.com/ephtracy/voxel-model">2. Vox Format Spec</a>
     <br>
-    <a class="btn btn-primary" href="http://192.241.207.218/uploads/MagicaVoxel-0.99.1-alpha-win32.zip" role="button"><span class="badge">win32</span> 0.99.1</a>
-    <a class="btn btn-primary" href="http://192.241.207.218/uploads/MagicaVoxel-0.99.1-alpha-win64.zip" role="button"><span class="badge">win64</span> 0.99.1</a>
+    <a class="btn btn-primary" href="https://www.dropbox.com/sh/t0hf5t0z89bqbdi/AAD_SN_cXxLILllzWztCuSMIa?dl=0" role="button"><span class="badge">win32</span> 0.99.2</a>
+    <a class="btn btn-primary" href="https://www.dropbox.com/sh/t0hf5t0z89bqbdi/AAD_SN_cXxLILllzWztCuSMIa?dl=0" role="button"><span class="badge">win64</span> 0.99.2</a>
     <a class="btn btn-primary" href="http://192.241.207.218/uploads/MagicaVoxel-0.99.1-alpha-mac.zip" role="button"><span class="badge">macOS</span> 0.99.1</a>
-    <a class="btn btn-primary" href="https://www.dropbox.com/sh/t0hf5t0z89bqbdi/AAD_SN_cXxLILllzWztCuSMIa?dl=0" role="button">Dropbox Mirror</a>
+    <a class="btn btn-primary" href="https://www.dropbox.com/sh/t0hf5t0z89bqbdi/AAD_SN_cXxLILllzWztCuSMIa?dl=0" role="button">Dropbox HistoryMirror</a>
 </div>
 
 <div id="mv-carousel" class="carousel slide" data-ride="carousel">
@@ -123,6 +123,7 @@
 <div class="row">
     <div class="col-lg-2 col-md-2 col-sm-3">
         <div class="list-group table-of-contents">
+          <a href="#update_099_2" class="list-group-item">0.99.2a</a>
           <a href="#update_099_1" class="list-group-item">0.99.1a</a>
           <a href="#update_099" class="list-group-item">0.99a</a>
           <a href="#update_098_2" class="list-group-item">0.98.2</a>
@@ -150,12 +151,12 @@
             <div class="panel-body">
 
                 <div id="update_099_2">
-                    <div class="updatelog_header text-warning">0.99.2 - ?/??/20??</div>
+                    <div class="updatelog_header text-warning">0.99.2 - 9/29/2018</div>
                     <ul class="decimallist">
                         <li>New Interface
                             <ul class="squarelist">
                                 <li> Redesigned the interface</li>
-                                <li> Slider view: mouse wheel, or drag on the scroll bar or panel to scroll the panel; can also resize the panel</li>
+                                <li> Slidable and resizable panels</li>
                                 <li> SDF font rendering</li>
                                 <li> <kbd>CTRL+Wheel</kbd> or <kbd>CTRL+/-</kbd> to scale UI size</li>
                                 <li> a basic object list to show the scene graph</li>
@@ -164,7 +165,7 @@
                         
                         <li>Renderer
                             <ul class="squarelist">
-                                <li> Large Sparse Volume [Sample->SV]: the rendering volume increases to <kbd>2048x2048x1024</kbd>. But there is still limits on the total number of solid voxels.</li>
+                                <li> Large Sparse Volume: <kbd>Sample->Geometry->SV<kbd> the rendering volume increases to <kbd>2048x2048x1024</kbd>. But the total number of solid voxels is still limited. SV Mode works with cubic voxel only</li>
                                 <li> Voxel Shapes: new <kbd>Clay</kbd> shape with the previous supported shapes (<kbd>Lego</kbd>, <kbd>Marching Cubes</kbd>, etc.)</li>
                                 <li> World Scale: rectangular voxels</li>
                                 <li> Pixelated Illumination: <kbd>Sample->PX</kbd></li>
