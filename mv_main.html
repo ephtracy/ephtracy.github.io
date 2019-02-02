@@ -7,7 +7,7 @@
     <ul class="squarelist">
         <li> Free to use for any project (no commercial licence required) </li>
         <li> Credits to the software are appreciated (e.g. "created by MagicaVoxel") </li>
-        <li> Distribution of the program package (original or modified) is disallowed </li>
+        <li> Selling the software (original or modified) is disallowed </li>
     </ul>
 </li>
 
@@ -100,7 +100,7 @@
     <h3 class="panel-title">For Windows 10 Users</h3>
   </div>
   <div class="panel-body">
-    <li>If you get misaligned UI, it is due to a driver bug of Intel integrated graphics card. Try to update drivers or force usage of Nvidia/AMD cards.
+    <li>If you get misaligned UI, it may be due to a driver bug of Intel integrated graphics card. Try to update drivers or force usage of Nvidia/AMD cards.
     </li>
   </div>
 </div>
@@ -123,6 +123,7 @@
 <div class="row">
     <div class="col-lg-2 col-md-2 col-sm-3">
         <div class="list-group table-of-contents">
+          <a href="#update_099_3" class="list-group-item">0.99.3a</a>
           <a href="#update_099_2" class="list-group-item">0.99.2a</a>
           <a href="#update_099_1" class="list-group-item">0.99.1a</a>
           <a href="#update_099" class="list-group-item">0.99a</a>
@@ -149,7 +150,42 @@
             </div>
 
             <div class="panel-body">
+                <div id="update_099_3">
+                    <div class="updatelog_header text-warning">0.99.3 - 2/?/2019</div>
+                    <ul class="decimallist">
+                        <li>Final Image Render : Render->Image Settings (Right Panel)
+                            <ul class="squarelist">
+                                <li> Photo Mode: up to <kbd>12000 x 12000</kbd> size images. Bloom effect is not available.</li>
+                                <li> Turntable: spinning camera animation with <kbd>Motion Blur</kbd>.</li>
+                                <li> Both modes can render in the background. </li>
+                            </ul>
+                        </li>
+                        
+                        <li>Lens
+                            <ul class="squarelist">
+                                <li> Panorama Projection: <kbd>Lens->Pano</kbd>. Set image size <kbd> width = height x 2</kbd></li>
+                                <li> Focus: can fix or set focus distance by numbers.</li>
+                                <li> Depth of Field effect can be enabled in all camera projection modes. </li>
+                                <li> Fixed bugs for camera blades (images become darker) and grids. </li>
+                            </ul>
+                        </li>
 
+                        <li>Camera Control
+                            <ul class="squarelist">
+                                <li> <kbd>X+left click</kbd> to set the camera rotation center in both editing and rendering modes. </li>
+                            </ul>
+                        </li>
+                        
+                        <li>Config
+                            <ul class="squarelist">
+                                <li> add <kbd>hotkey.txt</kbd> in <kbd>config/</kbd> folder to bind keys to commands. </li>
+                                <li> the keys <kbd>A-Z</kbd>, <kbd>0-9</kbd>, <kbd>F1-F12</kbd> are recommended. </li>
+                                <li> <kbd>repeat</kbd> token means that you can hold the keys to automatically perform multilple times of actions, e.g. undo/redo </kbd>
+                                <li> commands may be refactorred in the future. </li>
+                            </ul>
+                        </li>
+                </div>
+            
                 <div id="update_099_2">
                     <div class="updatelog_header text-warning">0.99.2 - 9/29/2018</div>
                     <ul class="decimallist">
