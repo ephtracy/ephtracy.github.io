@@ -10,17 +10,30 @@
         <th><b>Modifier</b> </th>
     </tr>
     <tr>
-        <td><span class="text-warning">>> Console</span></td>
+        <td><span class="text-warning">>> Global</span></td>
         <td></td>
     </tr>
     <tr>
         <td>F1 </td>
         <td>activate console </td>
     </tr>
+        <tr>
+        <td>CTRL+Z </td>
+        <td>undo </td>
+    </tr>
+    <tr>
+        <td>CTRL+Y </td>
+        <td>redo </td>
+        <td>=CTRL+SHIFT+Z </td>
+    </tr>
     <tr>
         <td>F6 / 6 </td>
         <td>screenshot </td>
         <td>+CTRL : for whole window </td>
+    </tr>
+    <tr>
+        <td>TAB </td>
+        <td>switch between model and world editor </td>
     </tr>
     <tr>
         <td>CTRL +/- </td>
@@ -100,7 +113,7 @@
         <td>change camera slot </td>
     </tr>
     <tr>
-        <td><span class="text-warning">>> Model File</span></td>
+        <td><span class="text-warning">>> Project</span></td>
         <td></td>
     </tr>
     <tr>
@@ -126,31 +139,6 @@
     <tr>
         <td>CTRL+SHIFT+P</td>
         <td>duplicate <b>P</b>roject </td>
-    </tr>
-    <tr>
-        <td><span class="text-warning">>> Edit</span></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>CTRL+Z </td>
-        <td>undo </td>
-    </tr>
-    <tr>
-        <td>CTRL+Y </td>
-        <td>redo </td>
-        <td>=CTRL+SHIFT+Z </td>
-    </tr>
-    <tr>
-        <td>U </td>
-        <td>f<b>U</b>ll model </td>
-    </tr>
-    <tr>
-        <td>I </td>
-        <td>f<b>I</b>ll model </td>
-    </tr>
-    <tr>
-        <td>Backspace/Delete </td>
-        <td>empty model </td>
     </tr>
     <tr>
         <td><span class="text-warning">>> Select</span></td>
@@ -181,7 +169,124 @@
         <td>paste </td>
     </tr>
     <tr>
-        <td><span class="text-warning">>> Brush Shape</span></td>
+        <td><span class="text-warning">>> Edit [Model Editor]</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>U </td>
+        <td>f<b>U</b>ll model </td>
+    </tr>
+    <tr>
+        <td>I </td>
+        <td>f<b>I</b>ll model </td>
+    </tr>
+    <tr>
+        <td>Backspace/Delete </td>
+        <td>delete voxels </td>
+    </tr>
+    <tr>
+        <td><span class="text-warning">>> Edit [World Editor]</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>TAB </td>
+        <td>enter group </td>
+    </tr>
+    <tr>
+        <td>SHIFT+TAB </td>
+        <td>leave group </td>
+    </tr>
+    <tr>
+        <td>U </td>
+        <td><b>U</b>nion combine objects into one object </td>
+    </tr>
+    <tr>
+        <td>Arrow/Page </td>
+        <td>move object </td>
+    </tr>
+    <tr>
+        <td>G </td>
+        <td>move object to the ground</td>
+    </tr>
+    <tr>
+        <td>-/+ </td>
+        <td>rotate object </td>
+    </tr>
+    <tr>
+        <td>CTRL+H </td>
+        <td><b>H</b>ide object </td>
+    </tr>
+    <tr>
+        <td>CTRL+SHIFT+H </td>
+        <td>un<b>H</b>ide object </td>
+    </tr>
+    <tr>
+        <td>CTRL+N </td>
+        <td><b>N</b>ew object </td>
+    </tr>
+    <tr>
+        <td>Backspace/Delete </td>
+        <td>delete object </td>
+    </tr>
+    <tr>
+        <td>CTRL+T </td>
+        <td>conver<b>T</b> reference to duplicate </td>
+    </tr>
+    <tr>
+        <td>CTRL+R </td>
+        <td>g<b>R</b>oup objects </td>
+    </tr>
+    <tr>
+        <td>CTRL+SHIFT+R </td>
+        <td>ung<b>R</b>oup objects </td>
+    </tr>
+    <tr>
+        <td><span class="text-warning">>> Brush [World Editor]</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ALT+LButton </td>
+        <td>pick voxel color </td>
+    </tr>
+    <tr>
+        <td>CTRL+LButton </td>
+        <td>move object on the surface</td>
+    </tr>
+    <tr>
+        <td><span class="text-warning">>> Brush [Model Editor]</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ALT+LButton </td>
+        <td>pick voxel color </td>
+    </tr>
+    <tr>
+        <td>CTRL+LButton </td>
+        <td>move voxels </td>
+        <td>+SHIFT : move in normal direction </td>
+    </tr>
+    <tr>
+        <td>T </td>
+        <td>a<b>T</b>tach brush </td>
+        <td>+SHIFT : temporally switch to Erase Brush</td>
+    </tr>
+    <tr>
+        <td>R </td>
+        <td>e<b>R</b>ase brush </td>
+        <td>+SHIFT : temporally switch to Attach Brush</td>
+    </tr>
+    <tr>
+        <td>G </td>
+        <td>paint brush </td>
+    </tr>
+    <tr>
+        <td>N </td>
+        <td>selectio<b>N</b> brush </td>
+        <td>+SHIFT : add selection; +SHIFT+ALT : subtract selection</td>
+    </tr>
+    <tr>
+    <tr>
+        <td><span class="text-warning">>> Brush Mode</span></td>
         <td></td>
     </tr>
     <tr>
@@ -220,107 +325,6 @@
         <td></td>
         <td>Home key : reset local offset to 0</td>
     </tr>
-    <tr>
-        <td><span class="text-warning">>> Object</span></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>TAB </td>
-        <td>switch between model and world editor/enter group </td>
-    </tr>
-    <tr>
-        <td>SHIFT+TAB </td>
-        <td>leave group </td>
-    </tr>
-    <tr>
-        <td>U </td>
-        <td><b>U</b>nion combine objects into one object </td>
-    </tr>
-    <tr>
-        <td>Arrow/Page </td>
-        <td>move object </td>
-    </tr>
-    <tr>
-        <td>G </td>
-        <td>move object on to the ground</td>
-    </tr>
-    <tr>
-        <td>-/+ </td>
-        <td>rotate object </td>
-    </tr>
-    <tr>
-        <td>CTRL+H </td>
-        <td><b>H</b>ide object </td>
-    </tr>
-    <tr>
-        <td>CTRL+SHIFT+H </td>
-        <td>un<b>H</b>ide object </td>
-    </tr>
-    <tr>
-        <td>CTRL+N </td>
-        <td><b>N</b>ew object </td>
-    </tr>
-    <tr>
-        <td>CTRL+T </td>
-        <td>convert reference to duplication </td>
-    </tr>
-    <tr>
-        <td>CTRL+R </td>
-        <td>g<b>R</b>oup objects </td>
-    </tr>
-    <tr>
-        <td>CTRL+SHIFT+R </td>
-        <td>ung<b>R</b>oup objects </td>
-    </tr>
-    <tr>
-        <td>Backspace/Delete </td>
-        <td><b>N</b>ew object </td>
-    </tr>
-    <tr>
-        <td><span class="text-warning">>> Brush Type [World Editor]</span></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>ALT+LButton </td>
-        <td>pick voxel color </td>
-    </tr>
-    <tr>
-        <td>CTRL+LButton </td>
-        <td>move object on the surface</td>
-    </tr>
-    <tr>
-        <td><span class="text-warning">>> Brush Type [Model Editor]</span></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>ALT+LButton </td>
-        <td>pick voxel color </td>
-    </tr>
-    <tr>
-        <td>CTRL+LButton </td>
-        <td>move model </td>
-        <td>+SHIFT : move in normal direction </td>
-    </tr>
-    <tr>
-        <td>T </td>
-        <td>a<b>T</b>tach brush </td>
-        <td>+SHIFT : temporally switch to Erase Brush</td>
-    </tr>
-    <tr>
-        <td>R </td>
-        <td>e<b>R</b>ase brush </td>
-        <td>+SHIFT : temporally switch to Attach Brush</td>
-    </tr>
-    <tr>
-        <td>G </td>
-        <td>paint brush </td>
-    </tr>
-    <tr>
-        <td>N </td>
-        <td>selection brush </td>
-        <td>+SHIFT : add selection; +SHIFT+ALT : subtract selection</td>
-    </tr>
-    <tr>
     <tr>
         <td><span class="text-warning">>> Mirror Mode </span></td>
         <td></td>
