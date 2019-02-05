@@ -1,6 +1,7 @@
 <!-- ephtracy content page --->
 <h2>Shortcuts</h2>
 <p>macOS: Use <span class="text-warning">Command</span> instead of <span class="text-warning">Ctrl</span></p>
+<p>you can bind keys to commands in <kbd>config/hotkey.txt</kbd></p>
 <table class="table table-bordered" width = "400" >
     <tbody>
     <tr>
@@ -13,7 +14,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>TAB </td>
+        <td>F1 </td>
         <td>activate console </td>
     </tr>
     <tr>
@@ -22,50 +23,81 @@
         <td>+CTRL : for whole window </td>
     </tr>
     <tr>
+        <td>CTRL +/- </td>
+        <td>Scale UI </td>
+    </tr>
+    <tr>
+        <td><span class="text-warning">>> Renderer</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LButton</td>
+        <td>pick focus of Depth of Field </td>
+    </tr>
+    <tr>
+        <td>ALT+LButton</td>
+        <td>pick voxel material </td>
+    </tr>
+    <tr>
+        <td>CTRL+R</td>
+        <td><b>R</b>eset material </td>
+    </tr>
+    <tr>
+        <td>CTRL+C</td>
+        <td><b>C</b>opy material </td>
+    </tr>
+    <tr>
+        <td>CTRL+V</td>
+        <td>paste material </td>
+    </tr>
+    <tr>
         <td><span class="text-warning">>> Camera</span></td>
         <td></td>
     </tr>
     <tr>
         <td>RButton </td>
         <td>rotate camera </td>
-        <td>=LButton+M </td>
     </tr>
     <tr>
         <td>MButton </td>
         <td>move camera focus</td>
+        <td>=LButton+Space =WASDQE+Space</td>
     </tr>
     <tr>
-        <td>RButton+Space </td>
-        <td>move camera focus </td>
-        <td>=WASDQE+Space </td>
-    </tr>
-    <tr>
-        <td>RButton+X </td>
+        <td>LButton+X </td>
         <td>set camera focus </td>
     </tr>
     <tr>
-        <td>RButton+K </td>
-        <td>navigate to 90 degree view </td>
-    </tr>
-    <tr>
-        <td>RButton+Ruler </td>
+        <td>LButton+Ruler </td>
         <td>snap camera angle to multiples of 5 degrees</td>
     </tr>
     <tr>
         <td>WASDQE </td>
-        <td>rotate camera / move camera (freestyle mode) </td>
+        <td>rotate camera / move camera (free mode) </td>
     </tr>
     <tr>
         <td>WHEEL </td>
         <td>zoom in/out </td>
     </tr>
     <tr>
-        <td>F5 / 5 </td>
+        <td>F4/4 </td>
+        <td>recenter camera </td>
+    </tr>
+    <tr>
+        <td>F5/5 </td>
+        <td>reset camera to 90 degree views </td>
+    </tr>
+     <tr>
+        <td>F7/7 </td>
         <td>save current camera pose </td>
     </tr>
     <tr>
-        <td>F7 / 7 </td>
+        <td>F8/8 </td>
         <td>load current camera pose </td>
+    </tr>
+    <tr>
+        <td>Numpad 0~9 </td>
+        <td>change camera slot </td>
     </tr>
     <tr>
         <td><span class="text-warning">>> Model File</span></td>
@@ -73,27 +105,27 @@
     </tr>
     <tr>
         <td>CTRL+S</td>
-        <td><b>S</b>ave model </td>
+        <td><b>S</b>ave project </td>
     </tr>
     <tr>
         <td>CTRL+SHIFT+S</td>
-        <td>Save As</td>
+        <td><b>S</b>ave project as</td>
     </tr>
     <tr>
         <td>CTRL+O</td>
-        <td><b>O</b>pen model </td>
+        <td><b>O</b>pen project </td>
     </tr>
     <tr>
         <td>CTRL+SHIFT+O</td>
-        <td>Import Model</td>
+        <td>import project</td>
     </tr>
     <tr>
-        <td>CTRL+N</td>
-        <td><b>N</b>ew model </td>
+        <td>CTRL+P</td>
+        <td>new <b>P</b>roject </td>
     </tr>
     <tr>
-        <td>CTRL+SHIFT+N</td>
-        <td>Duplicate model </td>
+        <td>CTRL+SHIFT+P</td>
+        <td>duplicate <b>P</b>roject </td>
     </tr>
     <tr>
         <td><span class="text-warning">>> Edit</span></td>
@@ -126,27 +158,27 @@
     </tr>
     <tr>
         <td>CTRL+A </td>
-        <td>select all </td>
+        <td>select <b>A</b>ll </td>
     </tr>
     <tr>
-        <td>CTRL+R </td>
-        <td>select inverse </td>
+        <td>CTRL+I </td>
+        <td>select <b>I</b>nverse </td>
     </tr>
     <tr>
         <td>CTRL+D </td>
-        <td>deselect all </td>
+        <td><b>D</b>eselect all </td>
     </tr>
     <tr>
         <td>CTRL+C </td>
-        <td>copy voxels </td>
+        <td><b>C</b>opy </td>
     </tr>
     <tr>
         <td>CTRL+X </td>
-        <td>cut voxels </td>
+        <td>cut </td>
     </tr>
     <tr>
         <td>CTRL+V </td>
-        <td>paste voxels </td>
+        <td>paste </td>
     </tr>
     <tr>
         <td><span class="text-warning">>> Brush Shape</span></td>
@@ -189,7 +221,75 @@
         <td>Home key : reset local offset to 0</td>
     </tr>
     <tr>
-        <td><span class="text-warning">>> Brush Type</span></td>
+        <td><span class="text-warning">>> Object</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>TAB </td>
+        <td>switch between model and world editor/enter group </td>
+    </tr>
+    <tr>
+        <td>SHIFT+TAB </td>
+        <td>leave group </td>
+    </tr>
+    <tr>
+        <td>U </td>
+        <td><b>U</b>nion combine objects into one object </td>
+    </tr>
+    <tr>
+        <td>Arrow/Page </td>
+        <td>move object </td>
+    </tr>
+    <tr>
+        <td>G </td>
+        <td>move object on to the ground</td>
+    </tr>
+    <tr>
+        <td>-/+ </td>
+        <td>rotate object </td>
+    </tr>
+    <tr>
+        <td>CTRL+H </td>
+        <td><b>H</b>ide object </td>
+    </tr>
+    <tr>
+        <td>CTRL+SHIFT+H </td>
+        <td>un<b>H</b>ide object </td>
+    </tr>
+    <tr>
+        <td>CTRL+N </td>
+        <td><b>N</b>ew object </td>
+    </tr>
+    <tr>
+        <td>CTRL+T </td>
+        <td>convert reference to duplication </td>
+    </tr>
+    <tr>
+        <td>CTRL+R </td>
+        <td>g<b>R</b>oup objects </td>
+    </tr>
+    <tr>
+        <td>CTRL+SHIFT+R </td>
+        <td>ung<b>R</b>oup objects </td>
+    </tr>
+    <tr>
+        <td>Backspace/Delete </td>
+        <td><b>N</b>ew object </td>
+    </tr>
+    <tr>
+        <td><span class="text-warning">>> Brush Type [World Editor]</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ALT+LButton </td>
+        <td>pick voxel color </td>
+    </tr>
+    <tr>
+        <td>CTRL+LButton </td>
+        <td>move object on the surface</td>
+    </tr>
+    <tr>
+        <td><span class="text-warning">>> Brush Type [Model Editor]</span></td>
         <td></td>
     </tr>
     <tr>
@@ -200,14 +300,6 @@
         <td>CTRL+LButton </td>
         <td>move model </td>
         <td>+SHIFT : move in normal direction </td>
-    </tr>
-    <tr>
-        <td>LButton [Renderer Mode]</td>
-        <td>pick focus of Depth of Field </td>
-    </tr>
-    <tr>
-        <td>ALT+LButton [Renderer Mode]</td>
-        <td>pick voxel material </td>
     </tr>
     <tr>
         <td>T </td>
@@ -251,18 +343,18 @@
     </tr>
     <tr>
         <td>CTRL+1 </td>
-        <td>loft x </td>
+        <td>axis x </td>
     </tr>
     <tr>
         <td>CTRL+2 </td>
-        <td>loft y </td>
+        <td>axis y </td>
     </tr>
     <tr>
         <td>CTRL+3 </td>
-        <td>loft z </td>
+        <td>axis z </td>
     </tr>
     <tr>
-        <td><span class="text-warning">>> Render</span></td>
+        <td><span class="text-warning">>> Display</span></td>
         <td></td>
     </tr>
     <tr>
@@ -290,16 +382,24 @@
         <td>display shado<b>W</b> </td>
     </tr>
     <tr>
+        <td>CTRL+M </td>
+        <td>display wirefra<b>M</b>e </td>
+    </tr>
+    <tr>
         <td><span class="text-warning">>> Palette</span></td>
         <td></td>
     </tr>
     <tr>
+        <td>ALT+DRAG </td>
+        <td>pick color from screen </td>
+    </tr>
+    <tr>
         <td>CTRL+DRAG </td>
-        <td>duplicate color </td>
+        <td>swap color </td>
     </tr>
     <tr>
         <td>CTRL+SHIFT+DRAG </td>
-        <td>fill block </td>
+        <td>duplicate color </td>
     </tr>
     <tr>
         <td>ALT+SHIFT+DRAG </td>
