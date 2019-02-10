@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.3 [2/3/2019]</span></h2>
+<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.3 [2/10/2019]</span></h2>
 
 <p>A free lightweight 8-bit voxel art editor and interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/d_WymsNdRBA" role="button">Tutorial</a></p>
 <li><b>License</b>
@@ -151,12 +151,12 @@
 
             <div class="panel-body">
                 <div id="update_099_3">
-                    <div class="updatelog_header text-warning">0.99.3 - 2/3/2019</div>
+                    <div class="updatelog_header text-warning">0.99.3 - 2/10/2019</div>
                     <ul class="decimallist">
                         <li>Final Image Render : Render->Image Settings (Right Panel)
                             <ul class="squarelist">
                                 <li> Photo Mode: up to <kbd>12000 x 12000</kbd> size images. Bloom effect is not available.</li>
-                                <li> Turntable Mode: spinning camera animation with <kbd>Motion Blur</kbd>. Saved as <kbd>name (frame index).png<k/bd> image sequence.</li>
+                                <li> Turntable Mode: spinning camera animation with <kbd>Motion Blur</kbd>. Saved as <kbd>name (frame index).png</kbd> image sequence.</li>
                                 <li> Both modes can render in the background. </li>
                                 <li> You may need to disbale <kbd>vsyn</kbd> in the GPU panel for this program. </li>
                             </ul>
@@ -177,8 +177,18 @@
                             </ul>
                         </li>
                         
+                        <li>Export
+                            <ul class="squarelist">
+                                <li> add <kbd>slices/cubes/point clouds</kbd> export options</li>
+                                <li> export settings (scale, axis, etc.) can be found in <kbd>config/config.txt/io_*</kbd> </li>
+                                <li> export objects are named as <kbd>[project name]-[index]-[object name].[ext]</kbd> </li>
+                                <li> the vertices of the mesh exports are using their global positions in the world editor. </li>
+                            </ul>
+                        </li>
+                        
                         <li>Config
                             <ul class="squarelist">
+                                <li> can modify <kbd>edge/ground/background/fade color</kbd> of the editor </li>
                                 <li> add <kbd>hotkey.txt</kbd> in <kbd>config/</kbd> folder to bind keys to commands. </li>
                                 <li> the keys <kbd>A-Z</kbd>, <kbd>0-9</kbd>, <kbd>F1-F12</kbd> are recommended. </li>
                                 <li> <kbd>repeat</kbd> token means that you can hold the keys to automatically perform multilple times of actions, e.g. undo/redo </kbd>
