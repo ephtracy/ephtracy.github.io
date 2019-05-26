@@ -123,6 +123,7 @@
 <div class="row">
     <div class="col-lg-2 col-md-2 col-sm-3">
         <div class="list-group table-of-contents">
+          <a href="#update_099_4" class="list-group-item">0.99.4a</a>
           <a href="#update_099_3" class="list-group-item">0.99.3a</a>
           <a href="#update_099_2" class="list-group-item">0.99.2a</a>
           <a href="#update_099_1" class="list-group-item">0.99.1a</a>
@@ -150,6 +151,20 @@
             </div>
 
             <div class="panel-body">
+                <div id="update_099_4">
+                    <div class="updatelog_header text-warning">0.99.4 - 5/??/2019</div>
+                    <ul class="decimallist">
+                        <li>Renderer
+                            <ul class="squarelist">
+                                <li> <kbd>Matter->Cloud</kbd>: Media material, supports multiple scattering inside volume.</li>
+                                <li> <kbd>Sample->MIS-GGX</kbd>: Multiple Importance Sampling (MIS) for GGX surfaces (Metal/Plastic/Glass). Significantly reduce noise. </li>
+                                <li> <kbd>Sample->TR-Shadow</kbd>: Tranlsucent Shadow. Allow light passing though glass and cloud voxels. Only <kbd>Glass->Attenuation</kbd> can affect the light color.</li>
+                                <li> can adjust <kbd>Bounce->Diffuse/Specular/Scatter</kbd> path depths separately.</li>
+                                <li> can assign glass/cloud materials to sphere/cylinder shape voxels.</li>
+                            </ul>
+                        </li>
+                </div>
+            
                 <div id="update_099_3">
                     <div class="updatelog_header text-warning">0.99.3 - 2/10/2019</div>
                     <ul class="decimallist">
