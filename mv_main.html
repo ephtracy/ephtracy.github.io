@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.3 [2/10/2019]</span></h2>
+<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.4 [5/29/2019]</span></h2>
 
 <p>A free lightweight 8-bit voxel art editor and interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/d_WymsNdRBA" role="button">Tutorial</a></p>
 <li><b>License</b>
@@ -15,8 +15,8 @@
     <a class="btn btn-link" href="https://ephtracy.github.io/index.html?page=mv_renderer" role="button">1. MagicalVoxel Viewer</a>
     <a class="btn btn-link" href="https://github.com/ephtracy/voxel-model">2. Vox Format Spec</a>
     <br>
-    <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/download/v0.99.3/MagicaVoxel-0.99.3-alpha-win32.zip" role="button"><span class="badge">win32</span> 0.99.3</a>
-    <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/download/v0.99.3/MagicaVoxel-0.99.3-alpha-win64.zip" role="button"><span class="badge">win64</span> 0.99.3</a>
+    <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/download/0.99.4/MagicaVoxel-0.99.4-alpha-win32.zip" role="button"><span class="badge">win32</span> 0.99.4</a>
+    <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/download/0.99.4/MagicaVoxel-0.99.4-alpha-win64.zip" role="button"><span class="badge">win64</span> 0.99.4</a>
     <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/download/v0.99.3/MagicaVoxel-0.99.3-alpha-macos.zip" role="button"><span class="badge">macOS</span> 0.99.3</a>
     <a class="btn btn-primary" href="https://www.dropbox.com/sh/t0hf5t0z89bqbdi/AAD_SN_cXxLILllzWztCuSMIa?dl=0" role="button">History</a>
 </div>
@@ -156,12 +156,12 @@
                     <ul class="decimallist">
                         <li>Renderer
                             <ul class="squarelist">
-                                <li> <kbd>Matter->Cloud</kbd>: Media material, supports multiple scattering inside volume.</li>
-                                <li> <kbd>Sample->MIS-GGX</kbd>: Multiple Importance Sampling (MIS) for GGX surfaces (Metal/Plastic/Glass). Significantly reduce noise. </li>
-                                <li> <kbd>Sample->TR-Shadow</kbd>: Tranlsucent Shadow. Allow light passing though glass and cloud voxels. Only <kbd>Glass->Attenuation</kbd> can affect the light color.</li>
+                                <li> <kbd>Matter->Cloud</kbd>: Media material which supports multiple scattering inside volume.</li>
+                                <li> <kbd>Sample->MIS-GGX</kbd>: Multiple Importance Sampling (MIS) for GGX surfaces (Metal/Plastic/Glass) for better reflection. </li>
+                                <li> <kbd>Sample->TR-Shadow</kbd>: Tranlsucent Shadow which allows light passing though glass and cloud voxels. Only <kbd>Glass->Attenuation</kbd> can affect the light color.</li>
                                 <li> can adjust <kbd>Bounce->Diffuse/Specular/Scatter</kbd> path depths separately.</li>
-                                <li> can assign glass/cloud materials to sphere/cylinder shape voxels.</li>
-                                <li> the renderer pipeline is refactored, needs more time for improvement, optimization, and bug fixes.</li>
+                                <li> can assign glass/cloud materials to sphere/cylinder shape voxels (for experiments only).</li>
+                                <li> the renderer pipeline is refactored, which needs more time for improvement, optimization and bug fixes.</li>
                             </ul>
                         </li>
                 </div>
