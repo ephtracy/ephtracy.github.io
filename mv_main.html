@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.4 [5/29/2019]</span></h2>
+<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.4.1 [9/2/2019]</span></h2>
 
 <p>A free lightweight 8-bit voxel art editor and GPU based interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/d_WymsNdRBA" role="button">Tutorial</a></p>
 <li><b>License</b>
@@ -105,12 +105,19 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Update Log</h3>
             </div>
-
-            <div class="panel-body">
                 <div id="update_099_4">
-                    <div class="updatelog_header text-warning">0.99.4 - 5/29/2019</div>
+                    <div class="updatelog_header text-warning">0.99.4 - 9/1/2019</div>
                     <ul class="decimallist">
-                        <li>Renderer
+                        <li>Renderer [0.99.4.1]
+                            <ul class="squarelist">
+                                <li> <kbd>Sky->IBL</kbd>: Image Based Lighting. use ".hdr" format panorama images to light the scene.</li>
+                                <li> <kbd>Fog</kbd>: add Equi-angular sampling back to reduce noises. support fogs in othogonal views in a bounding volume.</li>
+                                <li> <kbd>Media</kbd>: enable <kbd>Sample->TR-Shadow</kbd> to allow single direct lighting; enable <kbd>Sample->MIS-Cloud</kbd> to allow multiple direct lighting (very expensive).
+                                <li> <kbd>Color</kbd> all color options have their own color pickers which support HSV, RGB, H-Block and Hex values. </li>
+                                <li> <kbd>Palette Menu</kbd> right click the palette view to show the pop-up menu.</li>                                
+                            </ul>
+                        </li>
+                        <li>Renderer [0.99.4]
                             <ul class="squarelist">
                                 <li> <kbd>Matter->Cloud</kbd>: Media material which supports multiple scattering inside volume.</li>
                                 <li> <kbd>Sample->MIS-GGX</kbd>: Multiple Importance Sampling (MIS) for GGX surfaces (Metal/Plastic/Glass) for better reflection. </li>
