@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.4.2 [9/8/2019]</span></h2>
+<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.5 [4/5/2020]</span></h2>
 
 <p>A free lightweight 8-bit voxel art editor and GPU based interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/d_WymsNdRBA" role="button">Tutorial</a></p>
 <li><b>License</b>
@@ -104,14 +104,26 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Update Log</h3>
             </div>
-                <div id="update_099_5">
-                    <div class="updatelog_header text-warning">0.99.5 - ??/??/20</div>
+                <div id="faq">
+                    <div class="updatelog_header text-warning">FAQ</div>
+                    <ul class="decimallist">
+                        <li><kbd>black screen on mac</kbd>: move magicavoxel.app outside the folder and the move it back.</li>
+                        <li><kbd>ui is too small</kbd>: CTRL +/- to scale the ui. or change "ui_scale" in the "config.txt" file.</li>
+                        <li><kbd>multiple obejcts in the world editor</kbd>: press TAB or the ⇄ button on the top right.</li>
+                        <li><kbd>no middle mouse button</kbd>: "space + left drag" to span camera, "z + left drag" to zoom camera.</li>
+                        <li><kbd>black screen in the renderer</kbd>: GPU cards or driver don;t support the renderer.</li>
+                        <li><kbd>save screenshots for the whole window</kbd>: CTRL+6 or CTRL+F6.</li>
+                     </ul>
+                 </div>
+            
+                   <div id="update_099_5">
+                    <div class="updatelog_header text-warning">0.99.5 - 04/05/2020</div>
                     <ul class="decimallist">
                         <li>Refactored Model Editor
                             <ul class="squarelist">
                                 <li> Canvas size for single object increases to <kbd>256x256x256</kbd>.</li>
                                 <li> Rendering method in the editor view is changed to pure ray casting. </li>
-                                <li> Most of the brushes and edit commands are shader-based now (GPU accelerated). </li>
+                                <li> Most of the brushes and edit commands are shader-based (GPU accelerated). </li>
                                 <li> Undo/Redo commands are compressed to reduce memory usage. (can undo up to 100 commands) </li>
                                 <li> Can import jpeg images and export jpeg screenshot. </li>                                
                             </ul>
