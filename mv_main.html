@@ -123,13 +123,24 @@
                    <div id="update_099_5">
                     <div class="updatelog_header text-warning">0.99.5 - 04/05/2020</div>
                     <ul class="decimallist">
-                        <li>Refactored Model Editor (frequent bug fixes are expected)
+                        <li>Refactored Model Editor [04/05/2020]
                             <ul class="squarelist">
                                 <li> Canvas size for single object increases to <kbd>256x256x256</kbd>.</li>
                                 <li> Rendering method in the editor view is changed to pure ray casting. </li>
                                 <li> Most of the brushes and edit commands are shader-based (GPU accelerated). </li>
                                 <li> Undo/Redo commands are compressed to reduce memory usage. (can undo up to 100 commands) </li>
                                 <li> Can import jpeg images and export jpeg screenshot. </li>                                
+                            </ul>
+                        </li>
+                        <li>Multiple Color Selection in the Palette [04/27/2020]
+                            <ul class="squarelist">
+                                <li> the color and material modification (and some other cmds) can be applied to multiple colors now. </li>
+                                <li> e.g., <kbd>rand</kbd> cmd now uses the multiple selection as random range. </li>
+                                <li> <kbd>click</kbd> : single cursor selection; </li>
+                                <li> <kbd>drag</kbd> : multiple selection; </li>
+                                <li> <kbd>shift + drag</kbd> : add selection; </li>
+                                <li> <kbd>shift + alt + drag</kbd> : remove selection; </li>
+                                <li> you can copy and paste color code from the right-click menu. </li>
                             </ul>
                         </li>
                      </ul>
