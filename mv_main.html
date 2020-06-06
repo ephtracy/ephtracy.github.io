@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.5.0.2 [5/13/2020]</span></h2>
+<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.5.1 [6/5/2020]</span></h2>
 
 <p>A free lightweight 8-bit voxel art editor and GPU based interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/d_WymsNdRBA" role="button">Tutorial</a></p>
 <li><b>License</b>
@@ -122,7 +122,7 @@
                  </div>
             
                    <div id="update_099_5.1">
-                    <div class="updatelog_header text-warning">0.99.5.1 - ??/??/2020</div>
+                    <div class="updatelog_header text-warning">0.99.5.1 - 6/5/2020</div>
                     <ul class="decimallist">
                         <li>Scene Editor
                             <ul class="squarelist">
@@ -137,16 +137,38 @@
                         </li>
                         <li>Brush
                             <ul class="squarelist">
-                                <li> Brush modes (V/F/B/L/C/P) and options (mirror/axis) can be applied to the brush selection tool.</li>
+                                <li> New brush selection tool: Brush modes (V/F/B/L/C/P) and options (mirror/axis) can be applied.</li>
+                                <li> New resizable box brushe use gizmo to resize the box; press enter or other stroke/edit to commit. </li>
+                                <li> New SDF brush: box brush + voxel shader. </li>
+                                <li> <kbd> ctrl + alt + drag </kbd> to resize voxel brush. </li>
                                 <li> Sculpt Brushes can be applied to either selected or unselected regions.</li>
-                                <li> Regiopn options are also applied to remove/replace voxel color brushes.</li>
+                                <li> Region options are also applied to remove/replace voxel color brushes.</li>
                             </ul>
                         </li>
-                        <li>Crop and Fit
+                        <li>Live Crop and Fit
                             <ul class="squarelist">
                                 <li> Fit tool allows fitting the size of multiple objects</li>
                                 <li> Crop tool allows live resizing the canvas: drag arrow body to resize, drag arrow head to move</li>
                                 <li> New <kbd> 1/2 </kbd> tool.</li>
+                            </ul>
+                        </li>
+                        <li>IO panel
+                            <ul class="squarelist">
+                                <li> export/import palette/materials/rendering/camera/notes settings in text format. </li>
+                                <li> determine which components are saved in the vox file. </li>
+                                <li> export options: only export selected objects; export models in local space. </li>
+                                <li> import options: match similar colors in the palette; only import colors/materials for selected palette region. </li>
+                            </ul>
+                        </li>
+                        <li>Voxel Shader panel
+                            <ul class="squarelist">
+                                <li> Can bind user defined arguments to the interface via comments. </li>
+                                <li> live update by using the box brush. </li>
+                            </ul>
+                        </li>                        
+                        <li>Palette Note panel
+                            <ul class="squarelist">
+                                <li> add note to each row of the palette. </li>
                             </ul>
                         </li>
                         <li>Display
