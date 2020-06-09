@@ -107,17 +107,20 @@
                 <div id="faq">
                     <div class="updatelog_header text-warning">FAQ</div>
                     <ul class="decimallist">
-                        <li><kbd>VCOMP100.DLL</kbd> You may need to download this for windows:  <a href="https://www.microsoft.com/en-us/download/details.aspx?id=13523"> Microsoft Visual C++ 2010 SP1 Redistributable Package (x64) </a></li>
-                        <li><kbd>Black screen on mac</kbd>: move magicavoxel.app outside the folder and then move it back.</li>
+                        <li><kbd>win64 : VCOMP100.DLL</kbd> You may need to download this for windows:  <a href="https://www.microsoft.com/en-us/download/details.aspx?id=13523"> Microsoft Visual C++ 2010 SP1 Redistributable Package (x64) </a></li>
+                        <li><kbd>macOS : unable to open the app</kbd>: go to  Security and Privacy panel to allow the app open.</li>
+                        <li><kbd>macOS : Black screen</kbd>: move magicavoxel.app outside the folder and then move it back.</li>
+                        <li><kbd>macOS : too slow at retina resolution</kbd>: disable off Brush->Display->HDPI.</li>                 
                         <li><kbd>UI is too small</kbd>: CTRL +/- to scale the ui. or change "ui_scale" in the "config.txt" file.</li>
-                        <li><kbd>Multiple obejcts in the world editor</kbd>: press TAB or the ⇄ button on the top right.</li>
+                        <li><kbd>Multiple obejcts in the world editor</kbd>: press TAB or double-click the background.</li>
                         <li><kbd>No middle mouse button</kbd>: "space + left drag" to span camera, "z + left drag" to zoom camera.</li>
                         <li><kbd>Black screen in the renderer</kbd>: GPU cards or the driver don't meet the requirement.</li>
-                        <li><kbd>Incomplete scene in the renderer</kbd>: enable Sample>Geometry>Sparse.</li>
+                        <li><kbd>Incomplete scene in the renderer</kbd>: enable Sample>Geometry>Sparse. Also increase conifg.txt->render->dense_buffer/sparse_buffer.</li>
                         <li><kbd>Part of the model is under the ground</kbd>: go to the world editor, move the object above the ground (or press G).</li>
                         <li><kbd>Models are deleted by mistake</kbd>: The model can be recovered from the Trash.</li>
                         <li><kbd>Program crashed</kbd>: The model can be recovered from "/cache/backup.vox".</li>
                         <li><kbd>Save screenshots for the whole window</kbd>: CTRL+6 or CTRL+F6.</li>
+                        <li><kbd>Exported models are not centered</kbd>: enable IO->Export->Local.</li>
                      </ul>
                  </div>
             
