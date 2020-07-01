@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.5.1 [6/5/2020]</span></h2>
+<h2>MagicaVoxel @ ephtracy (Win/Mac) <span id="version" class="badge">0.99.5.1 [6/30/2020]</span></h2>
 
 <p>A free lightweight GPU-based voxel art editor and interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/WPPFnHQWwFk" role="button">Feature Demo</a> <a class="btn btn-link" href="https://youtu.be/mfKx4j-C6nI" role="button">Demo2</a></p>
 <li><b>License</b>
@@ -12,7 +12,7 @@
 </li>
 
 <div>
-    <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/tag/0.99.5" role="button"> Download 0.99.5.1</a>
+    <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/tag/0.99.6" role="button"> Download 0.99.6</a>
     <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/tag/0.99.4" role="button"> Download 0.99.4</a>
     <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/tag/0.01" role="button"> Plugin (Denoiser) </a>
     <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases" role="button">Previous Versions</a>
@@ -118,7 +118,21 @@
                      </ul>
                  </div>
             
-                   <div id="update_099_5.1">
+                    <div id="update_099_6">
+                    <div class="updatelog_header text-warning">0.99.6 - 06/30/2020</div>
+                    <ul class="decimallist">
+                        <li>New Unified Material System[06/30/2020]
+                            <ul class="squarelist">
+                                <li> <kbd>Blend Material</kbd>: weighted blending Metal/Plastic/Glass/Cloud materials (similar to Disney Principled BRDF).</li>
+                                <li> <kbd>SSS Material</kbd>: sub-surface scattering. <kbd>transparency</kbd> tp control light transmission. <kbd>density</kbd> to control light scattering.</li>
+                                <li> <kbd>Aborb/Scatter/Emissive Media Material</kbd>: emissive cloud. can be contained in the glass with <kbd>ior > 1</kbd>.</li>
+                                <li> <kbd>Improved Alpha Blending</kbd>: glass material, absorb media type, density = 0, ior = 0, transparency > 0 </li>
+                            </ul>
+                        </li>
+                     </ul>
+                     </div>
+            
+                    <div id="update_099_5.1">
                     <div class="updatelog_header text-warning">0.99.5.1 - 6/5/2020</div>
                     <ul class="decimallist">
                         <li>Scene Editor
