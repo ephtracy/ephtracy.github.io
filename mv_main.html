@@ -109,7 +109,7 @@
                         <li><kbd>Multiple obejcts in the world editor</kbd>: press <kbd>TAB or double-click</kbd> the background.</li>
                         <li><kbd>No middle mouse button</kbd>: <kbd>space + left drag</kbd> to span camera, <kbd>z + left drag</kbd> to zoom camera.</li>
                         <li><kbd>Black screen in the renderer</kbd>: GPU cards or the driver don't meet the requirement.</li>
-                        <li><kbd>Incomplete scene in the renderer</kbd>: enable Sample>Geometry>Sparse. Also increase conifg.txt->render->dense_buffer/sparse_buffer.</li>
+                        <li><kbd>Incomplete scene in the renderer</kbd>: enable Sample>Geometry>Sparse. Also increase config.txt->render->dense_buffer/sparse_buffer.</li>
                         <li><kbd>Part of the model is under the ground</kbd>: go to the world editor, move the object above the ground (or press G).</li>
                         <li><kbd>Models are deleted by mistake</kbd>: The model can be recovered from the Trash.</li>
                         <li><kbd>Program crashed</kbd>: The model can be recovered from "/cache/backup.vox".</li>
@@ -245,7 +245,7 @@
                             <ul class="squarelist">
                                 <li> <kbd>Matter->Cloud</kbd>: Media material which supports multiple scattering inside volume.</li>
                                 <li> <kbd>Sample->MIS-GGX</kbd>: Multiple Importance Sampling (MIS) for GGX surfaces (Metal/Plastic/Glass) for better reflection. </li>
-                                <li> <kbd>Sample->TR-Shadow</kbd>: Tranlsucent Shadow which allows light passing though glass and cloud voxels. Only <kbd>Glass->Attenuation</kbd> can affect the light color.</li>
+                                <li> <kbd>Sample->TR-Shadow</kbd>: Translucent Shadow which allows light passing though glass and cloud voxels. Only <kbd>Glass->Attenuation</kbd> can affect the light color.</li>
                                 <li> can adjust <kbd>Bounce->Diffuse/Specular/Scatter</kbd> path depths separately.</li>
                                 <li> can assign glass/cloud materials to sphere/cylinder shape voxels (for experiments only).</li>
                                 <li> the renderer pipeline is refactored, which needs more time to improve, optimize and fix bugs.</li>
@@ -263,7 +263,7 @@
                                 <li> Photo Mode: up to <kbd>12000 x 12000</kbd> size images. Bloom effect is not available.</li>
                                 <li> Turntable Mode: spinning camera animation with <kbd>Motion Blur</kbd>. Saved as <kbd>name (frame index).png</kbd> image sequence.</li>
                                 <li> Both modes can render in the background. </li>
-                                <li> You may need to disbale <kbd>vsyn</kbd> in the GPU panel for this program. </li>
+                                <li> You may need to disable <kbd>vsyn</kbd> in the GPU panel for this program. </li>
                             </ul>
                         </li>
                         
@@ -296,8 +296,8 @@
                                 <li> can modify <kbd>edge/ground/background/fade color</kbd> of the editor </li>
                                 <li> add <kbd>hotkey.txt</kbd> in <kbd>config/</kbd> folder to bind keys to commands. </li>
                                 <li> the keys <kbd>A-Z</kbd>, <kbd>0-9</kbd>, <kbd>F1-F12</kbd> are recommended. </li>
-                                <li> <kbd>repeat</kbd> token means that you can hold the keys to automatically perform multilple times of actions, e.g. undo/redo </kbd>
-                                <li> commands may be refactorred in the future. The feature is not robust. Use it carefully. </li>
+                                <li> <kbd>repeat</kbd> token means that you can hold the keys to automatically perform multiple times of actions, e.g. undo/redo </kbd>
+                                <li> commands may be refactored in the future. The feature is not robust. Use it carefully. </li>
                             </ul>
                         </li>
                 </div>
@@ -396,7 +396,7 @@
                         <li> Support larger volumes: <kbd>512x512x512</kbd>, <kbd>1024x512x256</kbd> or <kbd>1024x1024x128</kbd> </li>
                         <li> Can copy/paste materials using <kbd>CTRL+C/V</kbd> or <kbd>Matter->C/P</kbd> </li>
                         <li> Rendering settings are saved into file: lighting, lens, ground/edge colors, etc. </li>
-                        <li> Blooming effect is automaticlly calculated, and can be paused as well </li>
+                        <li> Blooming effect is automatically calculated, and can be paused as well </li>
                         <li> Can display constant color background: <kbd>View->Back</kbd> </li>
                     </ul>
                 </li>
@@ -445,7 +445,7 @@
             <ul class="decimallist">
                  <li>Bloom
                     <ul class="squarelist">
-                        <li> Click the button in Bloom section to calculate bloom effect when any rendeirng setting has been changed </li>
+                        <li> Click the button in Bloom section to calculate bloom effect when any rendering setting has been changed </li>
                         <li> It has its own progress bar, and uses the same number of samples from the top </li>
                         <li> When adjusting the weight with the slider, it won't restart rendering</li>
                         <li> It will enable <kbd>Camera->ACES</kbd> automatically </li>
@@ -473,7 +473,7 @@
                 <li>Sky Background
                     <ul class="squarelist">
                         <li> Enable <kbd>View->Back</kbd> (<kbd>CTRL+B</kbd>) to display sky as background</li>
-                        <li> The fading ground into horizon is controled by <kbd>Fog</kbd> slider</li>
+                        <li> The fading ground into horizon is controlled by <kbd>Fog</kbd> slider</li>
                         <li> For real fog, enable <kbd>Fog</kbd> firstly</li>
                     </ul>
                 </li>
