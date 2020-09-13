@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy [Win/Mac] <span id="version" class="badge">0.99.6 [6/30/2020]</span></h2>
+<h2>MagicaVoxel @ ephtracy [Win/Mac] <span id="version" class="badge">0.99.6.1 [9/13/2020]</span></h2>
 
 <p>A free lightweight GPU-based voxel art editor and interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/WPPFnHQWwFk" role="button">Feature Demo</a> <a class="btn btn-link" href="https://youtu.be/mfKx4j-C6nI" role="button">Demo2</a></p>
 <li><b>License</b>
@@ -106,8 +106,8 @@
                         <li><kbd>macOS : Black screen</kbd>: move magicavoxel.app outside the folder and then move it back.</li>
                         <li><kbd>macOS : too slow at retina resolution</kbd>: disable <kbd>Brush->Display->HDPI</kbd>.</li>                 
                         <li><kbd>UI is too small</kbd>: <kbd>CTRL +/-</kbd> to scale the ui. or change <kbd>ui_scale</kbd> in the config.txt file.</li>
-                        <li><kbd>Multiple obejcts in the world editor</kbd>: press <kbd>TAB or double-click</kbd> the background.</li>
-                        <li><kbd>No middle mouse button</kbd>: <kbd>space + left drag</kbd> to span camera, <kbd>z + left drag</kbd> to zoom camera.</li>
+                        <li><kbd>Multiple objects in the world editor</kbd>: press <kbd>TAB or double-click</kbd> the background.</li>
+                        <li><kbd>No middle mouse button</kbd>: <kbd>space + left drag</kbd> to pan camera, <kbd>z + left drag</kbd> to zoom camera.</li>
                         <li><kbd>Black screen in the renderer</kbd>: GPU cards or the driver don't meet the requirement.</li>
                         <li><kbd>Incomplete scene in the renderer</kbd>: enable Sample>Geometry>Sparse. Also increase conifg.txt->render->dense_buffer/sparse_buffer.</li>
                         <li><kbd>Part of the model is under the ground</kbd>: go to the world editor, move the object above the ground (or press G).</li>
@@ -119,7 +119,7 @@
                  </div>
             
                     <div id="update_099_6">
-                    <div class="updatelog_header text-warning">0.99.6 - 06/30/2020</div>
+                    <div class="updatelog_header text-warning">0.99.6.1 - 09/13/2020</div>
                     <ul class="decimallist">
                         <li>New Unified Material System[06/30/2020]
                             <ul class="squarelist">
@@ -127,6 +127,34 @@
                                 <li> <kbd>SSS Material</kbd>: sub-surface scattering. <kbd>transparency</kbd> tp control light transmission. <kbd>density</kbd> to control light scattering.</li>
                                 <li> <kbd>Aborb/Scatter/Emissive Media Material</kbd>: emissive cloud. can be contained in the glass with <kbd>ior > 1</kbd>.</li>
                                 <li> <kbd>Improved Alpha Blending</kbd>: glass material, absorb media type, density = 0, ior = 0, transparency > 0 </li>
+                            </ul>
+                        </li>
+                        <li>New Transform and Voxel Shader Brushes[09/13/2020]
+                            <ul class="squarelist">
+                                <li> Refactored the brush menu and add icons.</li>
+                                <li> <kbd>Voxel Shader Brush</kbd> to use Voxel Shaders interactively and directly.</li>
+                                <li> <kbd>Transform->Scale Brush</kbd> : live scale models, point sampled, low quality but fast.</li>
+                                <li> <kbd>Transform->Wrap Brush</kbd> : live wrap/crop models with mirroring and spacing modes.</li>
+                                <li> <kbd>Geometry Mode->Line/Square/Circle</kbd>: the old center mode is combined with the old line mode </li>
+                            </ul>
+                        </li>
+                        <li>Voxel Shader[09/13/2020]
+                            <ul class="squarelist">
+                                <li> no need to define <kbd>id</kbd> for arguments. </li>
+                                <li> use <kbd>var</kbd> to define alias of arguments. same as <kbd>float var = i_args[id];</kbd>. </li>
+                                <li> can import and export arguments values. </li>
+                                <li> can display compile errors in the console window. </li>
+                                <li> can get color selections via: <kbd>color_sel()</kbd>. </li>
+                                <li> can get palette color via: <kbd>palette().</kbd> </li>
+                                <li> increase number of arguments to <kbd>16</kbd>. <li>
+                            </ul>
+                        </li>
+                        <li>Editing[09/13/2020]
+                            <ul class="squarelist">
+                                <li> Boolean operations for groups and objects. </li>
+                                <li> <kbd>Modify->Mask/Texture</kbd> models with pattern models. </li>
+                                <li> <kbdPalette->Sort</kbd> only sorts selected colors if number of selection is greater than one. </li>
+                                <li> command <knd>log</kbd> can display count of models, scene size, count of voxels for each color, etc. </li>
                             </ul>
                         </li>
                      </ul>
