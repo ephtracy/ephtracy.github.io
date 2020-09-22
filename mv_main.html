@@ -1,6 +1,6 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy [Win/Mac] <span id="version" class="badge">0.99.6.1 [9/13/2020]</span></h2>
+<h2>MagicaVoxel @ ephtracy [Win/Mac] <span id="version" class="badge">0.99.6.2 [9/26/2020]</span></h2>
 
 <p>A free lightweight GPU-based voxel art editor and interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/WPPFnHQWwFk" role="button">Feature Demo</a> <a class="btn btn-link" href="https://youtu.be/mfKx4j-C6nI" role="button">Demo2</a></p>
 <li><b>License</b>
@@ -115,11 +115,12 @@
                         <li><kbd>Program crashed</kbd>: The model can be recovered from "/cache/backup.vox".</li>
                         <li><kbd>Save screenshots for the whole window</kbd>: CTRL+6 or CTRL+F6.</li>
                         <li><kbd>Exported models are not centered</kbd>: <kbd>enable IO->Export->Local</kbd>.</li>
+                        <li><kbd>Program crashed by corrupted backup model files</kbd>: delete the backup files in the <kbd> cache </kbd> folder.</li>
                      </ul>
                  </div>
             
                     <div id="update_099_6">
-                    <div class="updatelog_header text-warning">0.99.6.1 - 09/13/2020</div>
+                    <div class="updatelog_header text-warning">0.99.6.2 - 09/22/2020</div>
                     <ul class="decimallist">
                         <li>New Unified Material System[06/30/2020]
                             <ul class="squarelist">
@@ -129,13 +130,24 @@
                                 <li> <kbd>Improved Alpha Blending</kbd>: glass material, absorb media type, density = 0, ior = 0, transparency > 0 </li>
                             </ul>
                         </li>
-                        <li>New Transform and Voxel Shader Brushes[09/13/2020]
+                        <li>New Transform and Voxel Shader Brushes[09/26/2020]
                             <ul class="squarelist">
                                 <li> Refactored the brush menu and add icons.</li>
                                 <li> <kbd>Voxel Shader Brush</kbd> to use Voxel Shaders interactively and directly.</li>
                                 <li> <kbd>Transform->Scale Brush</kbd> : live scale models, point sampled, low quality but fast.</li>
                                 <li> <kbd>Transform->Wrap Brush</kbd> : live wrap/crop models with mirroring and spacing modes.</li>
                                 <li> <kbd>Geometry Mode->Line/Square/Circle</kbd>: the old center mode is combined with the old line mode </li>
+                                <li> <kbd>World Editor->Pattern and Wrap Brush</kbd>: can create patterns from selected object (check the pattern model menu on the right panel). </li>
+                            </ul>
+                        </li>
+                            </ul>
+                        </li>
+                        <li>Rotate Transform Brush [09/26/2020]
+                            <ul class="squarelist">
+                                <li> Axis rotate : press any inner circle. </li>
+                                <li> Screen rotate : press the outer circle. </li>
+                                <li> Sphere rotate : press any point inside the outer circle. </li>
+                                <li> Snap rotate : press <kbd> SHIFT </kbd> or <kbd> SHIFT+ALT </kbd> to snap angle to multiple of 5 or 15. </li>
                             </ul>
                         </li>
                         <li>Voxel Shader[09/13/2020]
@@ -149,12 +161,13 @@
                                 <li> increase number of arguments to <kbd>16</kbd>. <li>
                             </ul>
                         </li>
-                        <li>Editing[09/13/2020]
+                        <li>Editing[09/26/2020]
                             <ul class="squarelist">
                                 <li> Boolean operations for groups and objects. </li>
-                                <li> <kbd>Modify->Mask/Texture</kbd> models with pattern models. </li>
-                                <li> <kbdPalette->Sort</kbd> only sorts selected colors if number of selection is greater than one. </li>
-                                <li> command <knd>log</kbd> can display count of models, scene size, count of voxels for each color, etc. </li>
+                                <li> <kbd>Modify->Mask/Texture</kbd>: mask and texture models with pattern models. </li>
+                                <li> <kbdPalette->Sort</kbd>: only sorts selected colors if number of selection is greater than one. </li>
+                                <li> command <knd>log</kbd>: display count of models, scene size, count of voxels for each color, etc. </li>
+                                <li> command <knd>shear [axis] [scale] [scale]</kbd> shear model, e.g. <kbd> shear z 0.2 0.2 </kbd>. </li>
                             </ul>
                         </li>
                      </ul>
