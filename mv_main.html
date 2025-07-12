@@ -1,19 +1,18 @@
 <!-- ephtracy content page --->
 
-<h2>MagicaVoxel @ ephtracy [Win/Mac] <span id="version" class="badge">0.99.7.1 [5/29/2023]</span></h2>
+<h2>MagicaVoxel @ ephtracy [Win/Mac] <span id="version" class="badge">0.99.7.2 [7/12/2025]</span></h2>
 
 <p>A free lightweight GPU-based voxel art editor and interactive path tracing renderer. <a class="btn btn-link" href="https://youtu.be/WPPFnHQWwFk" role="button">Feature Demo</a> <a class="btn btn-link" href="https://youtu.be/mfKx4j-C6nI" role="button">Demo2</a></p>
 <li><b>License</b>
     <ul class="squarelist">
         <li> Free to use for any project. </li>
-        <li> Credits to the software are appreciated but not required (e.g. "created by MagicaVoxel"). </li>
-        <li> Selling the software (original or modified) is disallowed. </li>
-        <li> Shipping the software in other packages is disallowed. </li>
+        <li> Credits to the software are appreciated. </li>
+        <li> Selling or distributing the software (original or modified) in other packages are disallowed. </li>
     </ul>
 </li>
 
 <div>    
-    <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/tag/0.99.7" role="button"> Download 0.99.7.1 (Beta)</a>
+    <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/tag/0.99.7" role="button"> Download 0.99.7.2 (Beta)</a>
     <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases/tag/0.01" role="button"> Plugin (Denoiser) </a>
     <a class="btn btn-primary" href="https://github.com/ephtracy/ephtracy.github.io/releases" role="button">Previous Versions</a>
     <a class="btn btn-primary" href="https://github.com/ephtracy/voxel-model/tree/master/language" role="button">Language</a>
@@ -128,6 +127,34 @@
                         <li><kbd>Program crashed by corrupted backup model files</kbd>: delete the backup files in the <kbd> cache </kbd> folder.</li>
                      </ul>
                  </div>
+            
+                    <div id="update_099_7.2">
+                    <div class="updatelog_header text-warning">0.99.7.2 - 7/12/2025</div>
+                    <ul class="decimallist">
+                        <li>Animation
+                            <ul class="squarelist">Animation</li>
+                                <li> Drag and drop multiple image sprites or models into the editor view and select "Import Sprites".</li>
+                                <li> Click Edit->Tool->Frame in world editor to only duplicate current frame modesl without key frames.</li>
+                                <li> Shift+Drag animated objects will also translate all key frames.</li>
+                                <li> Show dialog when current model is not saved as key frame.</li>
+                                <li> Animation playback range is saved into "META" chunk of the file.</li>
+                            </ul>
+                        </li>
+                        <li>World and Model Edit
+                            <ul class="squarelist">
+                                <li> Modify rename_prefix/suffix in config.txt to change how multiple objects are renamed. </li>
+                                <li> Added 90 degree rotation gizmo. </li>
+                                <li> CTRL/CTRL+ALT/CTRL+ALT+SHIFT for 1/2/normal-axis move</li>
+                            </ul>
+                        </li>
+                        <li>Misc
+                            <ul class="squarelist">
+                                <li> Bug fixes. </li>
+                                <li> IO->File->Recover to local models and palettes only from corrupted files. </li>
+                            </ul>
+                        </li>
+                     </ul>
+                     </div>
             
                     <div id="update_099_7.1">
                     <div class="updatelog_header text-warning">0.99.7.1 - 5/29/2023</div>
